@@ -2,6 +2,11 @@
   <artifact type="exploded-war" name="MonkeyShop:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded</output-path>
     <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="MonkeyShop" />
+        </element>
+      </element>
       <element id="javaee-facet-resources" facet="MonkeyShop/web/Web" />
     </root>
   </artifact>

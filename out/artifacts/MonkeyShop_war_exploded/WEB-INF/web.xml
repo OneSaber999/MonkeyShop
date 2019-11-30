@@ -5,12 +5,5 @@
          version="4.0"
 
 >
-    <servlet>
-        <servlet-name>DoUserAdd</servlet-name>
-        <servlet-class>com.monkey.servlet.user.DoUserAdd</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>DoUserAdd</servlet-name>
-        <url-pattern>/DoUserAdd</url-pattern>
-    </servlet-mapping>
+
 </web-app>

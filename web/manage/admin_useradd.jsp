@@ -15,7 +15,7 @@
         </div>
         <div class="result-wrap">
             <div class="result-content">
-                <form action="DoUserAdd" method="post" id="myform" name="myform">
+                <form action="/manage/admin_douseradd" method="post" id="myform" name="myform">
                     <table class="insert-tab" width="100%">
                         <tbody>
                         <tr>

@@ -15,31 +15,31 @@
         </div>
         <div class="result-wrap">
             <div class="result-content">
-                <form action="admin_douseradd" method="post" id="myform" name="myform">
+                <form action="DoUserAdd" method="post" id="myform" name="myform">
                     <table class="insert-tab" width="100%">
                         <tbody>
                         <tr>
                             <th><i class="require-red">*</i>用户名：</th>
                             <td>
-                                <input class="common-text required" id="title" name="userName" size="50" value="" type="text">
+                                <input class="common-text required" id="userName" name="userName" size="50" value="" type="text">
                             </td>
                         </tr>
                         <tr>
                             <th><i class="require-red">*</i>用户姓名：</th>
                             <td>
-                                <input class="common-text required" id="title" name="name" size="50" value="" type="text">
+                                <input class="common-text required" id="name" name="name" size="50" value="" type="text">
                             </td>
                         </tr>
                         <tr>
                             <th><i class="require-red">*</i>登陆密码：</th>
                             <td>
-                                <input class="common-text required" id="title" name="password" size="50" value="" type="text">
+                                <input class="common-text required" id="password" name="password" size="50" value="" type="text">
                             </td>
                         </tr>
                         <tr>
                             <th><i class="require-red">*</i>确认密码：</th>
                             <td>
-                                <input class="common-text required" id="title" name="rePassword" size="50" value="" type="text">
+                                <input class="common-text required" id="rePassword" name="rePassword" size="50" value="" type="text">
                             </td>
                         </tr>
                         <tr>
@@ -56,19 +56,19 @@
                         <tr>
                             <th><i class="require-red">*</i>电子邮箱：</th>
                             <td>
-                                <input class="common-text required" id="title" name="email" size="50" value="" type="text">
+                                <input class="common-text required" id="email" name="email" size="50" value="" type="text">
                             </td>
                         </tr>
                         <tr>
                             <th><i class="require-red">*</i>手机号码：</th>
                             <td>
-                                <input class="common-text required" id="title" name="mobile" size="50" value="" type="text">
+                                <input class="common-text required" id="mobile" name="mobile" size="50" value="" type="text">
                             </td>
                         </tr>
                         <tr>
                             <th><i class="require-red">*</i>收货地址：</th>
                             <td>
-                                <input class="common-text required" id="title" name="address" size="50" value="" type="text">
+                                <input class="common-text required" id="address" name="address" size="50" value="" type="text">
                             </td>
                         </tr>
 

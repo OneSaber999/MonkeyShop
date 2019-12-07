@@ -11,9 +11,9 @@ public class MONKEY_USER {
     private String USER_EMAIL;
     private String USER_MOBILE;
     private String USER_ADDRESS;
-    private int USER_STSTUS;
+    private int USER_STATUS;
 
-    public MONKEY_USER(String USER_ID, String USER_NAME, String USER_PASSWORD, String USER_SEX, String USER_BIRTHDAY, String USER_IDENITY_CODE, String USER_EMAIL, String USER_MOBILE, String USER_ADDRESS, int USER_STSTUS) {
+    public MONKEY_USER(String USER_ID, String USER_NAME, String USER_PASSWORD, String USER_SEX, String USER_BIRTHDAY, String USER_IDENITY_CODE, String USER_EMAIL, String USER_MOBILE, String USER_ADDRESS, int USER_STATUS) {
         this.USER_ID = USER_ID;
         this.USER_NAME = USER_NAME;
         this.USER_PASSWORD = USER_PASSWORD;
@@ -23,7 +23,11 @@ public class MONKEY_USER {
         this.USER_EMAIL = USER_EMAIL;
         this.USER_MOBILE = USER_MOBILE;
         this.USER_ADDRESS = USER_ADDRESS;
-        this.USER_STSTUS = USER_STSTUS;
+        this.USER_STATUS = USER_STATUS;
+    }
+
+    public MONKEY_USER(String user_id, String uesr_name, String uesr_password, String uesr_sex, String uesr_birthday, String uesr_identity_code, String uesr_email, String uesrEmail, String uesr_mobile, String uesr_address, int uesr_status) {
+
     }
 
     public String getUSER_ID() {
@@ -98,11 +102,11 @@ public class MONKEY_USER {
         this.USER_ADDRESS = USER_ADDRESS;
     }
 
-    public int getUSER_STSTUS() {
-        return USER_STSTUS;
+    public int getUSER_STATUS() {
+        return USER_STATUS;
     }
 
-    public void setUSER_STSTUS(int USER_STSTUS) {
-        this.USER_STSTUS = USER_STSTUS;
+    public void setUSER_STATUS(int USER_STATUS) {
+        this.USER_STATUS = USER_STATUS;
     }
 }

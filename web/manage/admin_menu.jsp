@@ -6,6 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!doctype html>
 <html>
 <head>
@@ -43,7 +45,7 @@
                 <li>
                     <a href="#"><i class="icon-font">&#xe003;</i>常用操作</a>
                     <ul class="sub-menu">
-                        <li><a href="admin_user.jsp"><i class="icon-font">&#xe008;</i>用户管理</a></li>
+                        <li><a href="/manage/admin_douserselect"><i class="icon-font">&#xe008;</i>用户管理</a></li>
                         <li><a href="admin_cate.jsp"><i class="icon-font">&#xe005;</i>分类管理</a></li>
                         <li><a href="admin_product.jsp"><i class="icon-font">&#xe004;</i>商品管理</a></li>
                         <li><a href="admin_order.jsp"><i class="icon-font">&#xe012;</i>订单管理</a></li>

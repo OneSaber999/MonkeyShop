@@ -51,7 +51,7 @@
                         </tr>
                         <tr>
                             <th>出生日期：</th>
-                            <td><input class="common-text" name="birtaday" size="50" value="" type="text"></td>
+                            <td><input class="common-text" name="birthday" size="50" value="" type="text"></td>
                         </tr>
                         <tr>
                             <th><i class="require-red">*</i>电子邮箱：</th>

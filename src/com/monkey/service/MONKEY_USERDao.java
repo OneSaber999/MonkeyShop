@@ -39,19 +39,28 @@ public class MONKEY_USERDao {
     /**
      * 获取总页数和总记录数
      *
-     * @param count
-     * @return
+     *
      */
 
-    public static int[] totalPage(int count) {
+    public static int[] totalPage(int count,String keywords) {
         //0 总记录数  1 总页数
         int[] arr = {0, 1};
         Connection conn = BaseDao.getconn();
         PreparedStatement ps = null;
         ResultSet rs = null;
         try {
-            String sql = "select count(*) from MONKEY_USER";
-            ps = conn.prepareStatement(sql);
+            String sql = "";
+
+            if (keywords != null){
+                sql = "select count(*) from MONKEY_USER where USER_NAME like ?";
+                ps = conn.prepareStatement(sql);
+                ps.setString(1, "%" + keywords + "%");
+
+            }else {
+                sql = "select count(*) from MONKEY_USER";
+                ps = conn.prepareStatement(sql);
+            }
+
             rs = ps.executeQuery();
             while (rs.next()) {
                 arr[0] = rs.getInt(1);
@@ -82,13 +91,13 @@ public class MONKEY_USERDao {
         try {
             String sql = "";
             if (keywords != null) {
-                sql = "select * from MONKEY_USER where USER_ID like ? order by USER_ID asc limit ?, ?";
+                sql = "select * from MONKEY_USER where USER_NAME like ? order by USER_UPDATETIME asc limit ?, ?";
                 ps = conn.prepareStatement(sql);
                 ps.setString(1, "%" + keywords + "%");
                 ps.setInt(2, (cpage - 1) * count);
                 ps.setInt(3, count);
-            } else {
-                sql = "select * from MONKEY_USER order by USER_UPDATETIME asc limit ?, ?";
+            }else {
+                sql = "select * from MONKEY_USER order by USER_UPDATETIME desc limit ?, ?";
                 ps = conn.prepareStatement(sql);
                 ps.setInt(1, (cpage - 1) * count);
                 ps.setInt(2, count);

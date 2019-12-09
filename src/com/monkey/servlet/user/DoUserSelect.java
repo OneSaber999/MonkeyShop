@@ -30,7 +30,7 @@ public class DoUserSelect extends HttpServlet {
             cpage = Integer.parseInt(cp);
         }
 
-        int[] arr = MONKEY_USERDao.totalPage(count);
+        int[] arr = MONKEY_USERDao.totalPage(count,keywords);
 
 
         //获取所有用户记录
@@ -41,6 +41,10 @@ public class DoUserSelect extends HttpServlet {
         request.setAttribute("tsum",arr[0]);
         request.setAttribute("tpage",arr[1]);
         request.setAttribute("cpage",cpage);
+
+        if (keywords != null){
+            request.setAttribute("SearchParams","&keywords="+keywords);
+        }
 
         request.getRequestDispatcher("admin_user.jsp").forward(request,response);
 

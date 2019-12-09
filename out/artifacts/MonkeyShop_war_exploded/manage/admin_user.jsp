@@ -29,7 +29,7 @@
                                 </select>
                             </td>
                             <th width="70">关键字:</th>
-                            <td><input class="common-text" placeholder="关键字" name="keywords" value="" id="" type="text"></td>
+                            <td><input class="common-text" placeholder="关键字" name="keywords" value="${param.keywords}" id="" type="text"></td>
                             <td><input class="btn btn-primary btn2" name="sub" value="查询" type="submit"></td>
                         </tr>
                     </table>
@@ -54,6 +54,7 @@
                             <th>性别</th>
                             <th>EMAIL</th>
                             <th>手机号码</th>
+                            <th>添加时间</th>
                             <th>操作</th>
                         </tr>
 
@@ -65,6 +66,7 @@
                             <td>${u.USER_SEX=='T'?'男':'女'}</td>
                             <td>${u.USER_EMAIL}</td>
                             <td>${u.USER_MOBILE}</td>
+                            <td>${u.USER_UPDATETIME}</td>
 
                             <td>
                                 <a class="link-update" href="#">修改</a>
@@ -74,10 +76,10 @@
                     </c:forEach>
                 </table>
                     <div class="list-page">  共${tsum}条 ${cpage}/${tpage} 页
-                        <a href="/manage/admin_douserselect?cp=1">首页</a>
-                        <a href="/manage/admin_douserselect?cp=${cpage-1<1?1:cpage-1}">上一页</a>
-                        <a href="/manage/admin_douserselect?cp=${cpage+1>tpage?tpage:cpage+1}">下一页</a>
-                        <a href="/manage/admin_douserselect?cp=${tpage}">尾页</a>
+                        <a href="/manage/admin_douserselect?cp=1${SearchParams}">首页</a>
+                        <a href="/manage/admin_douserselect?cp=${cpage-1<1?1:cpage-1}${SearchParams}">上一页</a>
+                        <a href="/manage/admin_douserselect?cp=${cpage+1>tpage?tpage:cpage+1}${SearchParams}">下一页</a>
+                        <a href="/manage/admin_douserselect?cp=${tpage}${SearchParams}">尾页</a>
                     </div>
                 </div>
             </form>

@@ -130,4 +130,52 @@ public class MONKEY_USERDao {
 
         return list;
     }
+
+    /**
+     * 通过ID查找用户
+     */
+
+    public static MONKEY_USER selectById(String id) {
+        MONKEY_USER u = null;
+        //声明结果集
+        ResultSet rs = null;
+        //获取连接对象
+        Connection conn = BaseDao.getconn();
+
+        PreparedStatement ps = null;
+
+        try {
+            String sql = "select m.*,date_format(m.USER_BIRTHDAY,'%Y-%m-%d') birthday from MONKEY_USER m where USER_ID = ?";
+
+            ps = conn.prepareStatement(sql);
+            ps.setString(1, id);
+
+
+            rs = ps.executeQuery();
+
+            while (rs.next()) {
+                 u = new MONKEY_USER(rs.getString("USER_ID"),
+                        rs.getString("USER_NAME"),
+                        rs.getString("USER_PASSWORD"),
+                        rs.getString("USER_SEX"),
+                        rs.getString("birthday"),
+                        rs.getString("USER_IDENTITY_CODE"),
+                        rs.getString("USER_EMAIL"),
+                        rs.getString("USER_MOBILE"),
+                        rs.getString("USER_ADDRESS"),
+                        rs.getInt("USER_STATUS"),
+                        rs.getString("USER_UPDATETIME")
+
+                );
+
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            BaseDao.closeall(rs, ps, conn);
+        }
+
+        return u;
+    }
+
 }

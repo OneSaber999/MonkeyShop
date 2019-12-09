@@ -69,8 +69,8 @@
                             <td>${u.USER_UPDATETIME}</td>
 
                             <td>
-                                <a class="link-update" href="#">修改</a>
-                                <a class="link-del" href="#">删除</a>
+                                <a class="link-update" href="admin_touserupdate?id=${u.USER_ID}&cpage=${cpage}">修改</a>
+                                <a class="link-del" href="admin_">删除</a>
                             </td>
                         </tr>
                     </c:forEach>

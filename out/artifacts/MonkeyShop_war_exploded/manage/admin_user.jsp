@@ -1,4 +1,5 @@
-<%--
+<%@ page import="java.util.List" %>
+<%@ page import="java.util.Map" %><%--
   Created by IntelliJ IDEA.
   User: jiandx
   Date: 2019/12/3
@@ -6,7 +7,9 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ include file="admin_menu.jsp" %>
+
     <!--/sidebar-->
     <div class="main-wrap">
 
@@ -53,7 +56,7 @@
                             <th>手机号码</th>
                             <th>操作</th>
                         </tr>
-
+<%--                        <%List userlist = (List<Map<String, Object>>)request.getAttribute("userlist");%>--%>
                     <c:forEach var="u" items="${userlist}">
                         <tr>
                             <td class="tc"><input name="id[]" value="${u.USER_ID}" type="checkbox"></td>

@@ -7,7 +7,7 @@ public class BaseDao {
     static {
         //加载驱动
         try {
-            Class.forName("org.mariadb.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
@@ -17,7 +17,7 @@ public class BaseDao {
         //创建一个连接对象
         Connection conn = null;
         try {
-            conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/monkeyshop","root",null);
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/monkeyshop?useSSL=false&serverTimezone=UTC","root","123456");
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -33,6 +33,7 @@ public class BaseDao {
 
         //insert into user()
         try {
+            //准备sql
             ps = conn.prepareStatement(sql);
 
             for (int i = 0; i < params.length; i++) {

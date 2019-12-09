@@ -85,15 +85,15 @@ public class MONKEY_USERDao {
 
             while (rs.next()){
                 MONKEY_USER u = new MONKEY_USER(rs.getString("USER_ID"),
-                                                rs.getString("UESR_NAME"),
-                                                rs.getString("UESR_PASSWORD"),
-                                                rs.getString("UESR_SEX"),
-                                                rs.getString("UESR_BIRTHDAY"),
-                                                rs.getString("UESR_IDENITY_CODE"),
-                                                rs.getString("UESR_EMAIL"),
-                                                rs.getString("UESR_MOBILE"),
-                                                rs.getString("UESR_ADDRESS"),
-                                                rs.getInt("UESR_STATUS"));
+                                                rs.getString("USER_NAME"),
+                                                rs.getString("USER_PASSWORD"),
+                                                rs.getString("USER_SEX"),
+                                                rs.getString("USER_BIRTHDAY"),
+                                                rs.getString("USER_IDENITY_CODE"),
+                                                rs.getString("USER_EMAIL"),
+                                                rs.getString("USER_MOBILE"),
+                                                rs.getString("USER_ADDRESS"),
+                                                rs.getInt("USER_STATUS"));
                 list.add(u);
             }
         } catch (SQLException e) {

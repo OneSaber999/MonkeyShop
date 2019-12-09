@@ -36,6 +36,34 @@ public class MONKEY_USERDao {
 
     }
 
+    //修改
+    public static int update(MONKEY_USER u) {
+        String sql = "update MONKEY_USER set USER_NAME = ?,USER_PASSWORD = ?,USER_SEX = ?,USER_BIRTHDAY = DATE_FORMAT(?, '%Y-%m-%d'),USER_IDENTITY_CODE = ?,USER_EMAIL = ?,USER_MOBILE = ?,USER_ADDRESS = ?,USER_STATUS = ? where USER_ID = ?";
+
+        Object[] params = new Object[]{
+                u.getUSER_NAME(),
+                u.getUSER_PASSWORD(),
+                u.getUSER_SEX(),
+                u.getUSER_BIRTHDAY(),
+                u.getUSER_IDENTITY_CODE(),
+                u.getUSER_EMAIL(),
+                u.getUSER_MOBILE(),
+                u.getUSER_ADDRESS(),
+                u.getUSER_STATUS(),
+                u.getUSER_ID()
+        };
+
+        return BaseDao.exectuIUD(sql, params);
+
+    }
+    //删除
+    public static int del(String id){
+        String sql = "delete from MONKEY_USER where USER_ID = ? and USER_STATUS != 2";
+
+        Object[] params = {id};
+        return BaseDao.exectuIUD(sql,params);
+    }
+
     /**
      * 获取总页数和总记录数
      *

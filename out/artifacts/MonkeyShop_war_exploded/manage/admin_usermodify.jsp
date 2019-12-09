@@ -21,7 +21,9 @@
     </div>
     <div class="result-wrap">
         <div class="result-content">
-            <form action="/manage/admin_douseradd" method="post" id="myform" name="myform">
+            <form action="/manage/admin_douserupdate" method="post" id="myform" name="myform">
+                <input type="hidden" name="userStatus" value="${user.USER_STATUS}">
+                <input type="hidden" name="cpage" value="${cpage}">
                 <table class="insert-tab" width="100%">
                     <tbody>
                     <tr>

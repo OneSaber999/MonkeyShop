@@ -14,7 +14,7 @@
     <div class="main-wrap">
 
         <div class="crumb-wrap">
-            <div class="crumb-list"><i class="icon-font"></i><a href="index.html">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">用户管理</span></div>
+            <div class="crumb-list"><i class="icon-font"></i><a href="/manage/admin_index.jsp">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">用户管理</span></div>
         </div>
         <div class="search-wrap">
             <div class="search-content">
@@ -37,18 +37,18 @@
             </div>
         </div>
         <div class="result-wrap">
-            <form name="myform" id="myform" method="post">
+            <form action="/manage/admin_douserdel" id="myform" method="post">
                 <div class="result-title">
                     <div class="result-list">
                         <a href="admin_useradd.jsp"><i class="icon-font"></i>新增用户</a>
-                        <a id="batchDel" href="javascript:void(0)"><i class="icon-font"></i>批量删除</a>
+                        <a id="batchDel" href="javascript:delmore('你确定删除这些用户吗>','myform')"><i class="icon-font"></i>批量删除</a>
                         <a id="updateOrd" href="javascript:void(0)"><i class="icon-font"></i>更新排序</a>
                     </div>
                 </div>
                 <div class="result-content">
                     <table class="result-tab" width="100%">
                         <tr>
-                            <th class="tc" width="5%"><input class="allChoose" name="" type="checkbox"></th>
+                            <th class="tc" width="5%"><input class="allChoose" name="" onclick="selall(this)" type="checkbox"></th>
                             <th>ID</th>
                             <th>姓名</th>
                             <th>性别</th>
@@ -70,10 +70,13 @@
 
                             <td>
                                 <a class="link-update" href="admin_touserupdate?id=${u.USER_ID}&cpage=${cpage}">修改</a>
-                                <a class="link-del" href="admin_">删除</a>
+                                <c:if test="${u.USER_STATUS == 1}">
+                                    <a class="link-del" href="javascript:Delete('确定删除用户[${u.USER_NAME}]吗?','/manage/admin_douserdel?id=${u.USER_ID}&cpage=${cpage}')">删除</a>
+                                </c:if>
                             </td>
                         </tr>
                     </c:forEach>
+
                 </table>
                     <div class="list-page">  共${tsum}条 ${cpage}/${tpage} 页
                         <a href="/manage/admin_douserselect?cp=1${SearchParams}">首页</a>
@@ -88,4 +91,25 @@
     <!--/main-->
 </div>
 </body>
+<script>
+    function Delete(mess,url) {
+        if (confirm(mess)){
+            location.href = url;
+        }
+    }
+
+    function selall(o) {
+        let a = document.getElementsByName('id[]');
+        for (let i = 0; i < a.length ; i++) {
+            a[i].checked = o.checked;
+        }
+    }
+
+    function delmore(mess,formname) {
+        if (confirm(mess)){
+            var form = document.getElementById(formname);
+            form.submit();
+        }
+    }
+</script>
 </html>

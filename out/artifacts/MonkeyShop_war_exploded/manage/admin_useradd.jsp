@@ -12,7 +12,7 @@
 
         <div class="crumb-wrap">
             <div class="crumb-list"><i class="icon-font"></i>
-                <a href="/jscss/admin/design/">首页</a>
+                <a href="/manage/admin_index.jsp">首页</a>
                 <span class="crumb-step">&gt;</span>
                 <a class="crumb-name" href="admin_user.jsp">用户管理</a>
                 <span class="crumb-step">&gt;</span>

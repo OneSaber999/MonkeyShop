@@ -38,7 +38,7 @@ public class DoUserAdd extends HttpServlet {
         //成功或失败重定向到哪里
 
         if(count > 0) {
-            response.sendRedirect("admin_user.jsp");
+            response.sendRedirect("admin_douserselect");
         } else {
             PrintWriter out = response.getWriter();
 

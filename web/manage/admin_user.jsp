@@ -18,7 +18,7 @@
         </div>
         <div class="search-wrap">
             <div class="search-content">
-                <form action="#" method="post">
+                <form action="/manage/admin_douserselect" method="post">
                     <table class="search-tab">
                         <tr>
                             <th width="120">选择分类:</th>
@@ -73,11 +73,12 @@
                         </tr>
                     </c:forEach>
                 </table>
-                    <div class="list-page">  共${tsum}条 ${cpage}/${tpage} 页</div>
-                    <a href="">首页</a>
-                    <a href="">上一页</a>
-                    <a href="">下一页</a>
-                    <a href="">尾页</a>
+                    <div class="list-page">  共${tsum}条 ${cpage}/${tpage} 页
+                        <a href="/manage/admin_douserselect?cp=1">首页</a>
+                        <a href="/manage/admin_douserselect?cp=${cpage-1<1?1:cpage-1}">上一页</a>
+                        <a href="/manage/admin_douserselect?cp=${cpage+1>tpage?tpage:cpage+1}">下一页</a>
+                        <a href="/manage/admin_douserselect?cp=${tpage}">尾页</a>
+                    </div>
                 </div>
             </form>
         </div>

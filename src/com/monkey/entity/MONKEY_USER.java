@@ -7,27 +7,42 @@ public class MONKEY_USER {
     private String USER_PASSWORD;
     private String USER_SEX;
     private String USER_BIRTHDAY;
-    private String USER_IDENITY_CODE;
+    private String USER_IDENTITY_CODE;
     private String USER_EMAIL;
     private String USER_MOBILE;
     private String USER_ADDRESS;
     private int USER_STATUS;
+    private String USER_UPDATETIME;
 
-    public MONKEY_USER(String USER_ID, String USER_NAME, String USER_PASSWORD, String USER_SEX, String USER_BIRTHDAY, String USER_IDENITY_CODE, String USER_EMAIL, String USER_MOBILE, String USER_ADDRESS, int USER_STATUS) {
+    public MONKEY_USER() {
+    }
+
+    public MONKEY_USER(String USER_ID, String USER_NAME, String USER_PASSWORD, String USER_SEX, String USER_BIRTHDAY, String USER_IDENTITY_CODE, String USER_EMAIL, String USER_MOBILE, String USER_ADDRESS, int USER_STATUS) {
         this.USER_ID = USER_ID;
         this.USER_NAME = USER_NAME;
         this.USER_PASSWORD = USER_PASSWORD;
         this.USER_SEX = USER_SEX;
         this.USER_BIRTHDAY = USER_BIRTHDAY;
-        this.USER_IDENITY_CODE = USER_IDENITY_CODE;
+        this.USER_IDENTITY_CODE = USER_IDENTITY_CODE;
         this.USER_EMAIL = USER_EMAIL;
         this.USER_MOBILE = USER_MOBILE;
         this.USER_ADDRESS = USER_ADDRESS;
         this.USER_STATUS = USER_STATUS;
+
     }
 
-    public MONKEY_USER(String user_id, String uesr_name, String uesr_password, String uesr_sex, String uesr_birthday, String uesr_identity_code, String uesr_email, String uesrEmail, String uesr_mobile, String uesr_address, int uesr_status) {
-
+    public MONKEY_USER(String USER_ID, String USER_NAME, String USER_PASSWORD, String USER_SEX, String USER_BIRTHDAY, String USER_IDENTITY_CODE, String USER_EMAIL, String USER_MOBILE, String USER_ADDRESS, int USER_STATUS, String USER_UPDATETIME) {
+        this.USER_ID = USER_ID;
+        this.USER_NAME = USER_NAME;
+        this.USER_PASSWORD = USER_PASSWORD;
+        this.USER_SEX = USER_SEX;
+        this.USER_BIRTHDAY = USER_BIRTHDAY;
+        this.USER_IDENTITY_CODE = USER_IDENTITY_CODE;
+        this.USER_EMAIL = USER_EMAIL;
+        this.USER_MOBILE = USER_MOBILE;
+        this.USER_ADDRESS = USER_ADDRESS;
+        this.USER_STATUS = USER_STATUS;
+        this.USER_UPDATETIME = USER_UPDATETIME;
     }
 
     public String getUSER_ID() {
@@ -70,12 +85,12 @@ public class MONKEY_USER {
         this.USER_BIRTHDAY = USER_BIRTHDAY;
     }
 
-    public String getUSER_IDENITY_CODE() {
-        return USER_IDENITY_CODE;
+    public String getUSER_IDENTITY_CODE() {
+        return USER_IDENTITY_CODE;
     }
 
-    public void setUSER_IDENITY_CODE(String USER_IDENITY_CODE) {
-        this.USER_IDENITY_CODE = USER_IDENITY_CODE;
+    public void setUSER_IDENTITY_CODE(String USER_IDENTITY_CODE) {
+        this.USER_IDENTITY_CODE = USER_IDENTITY_CODE;
     }
 
     public String getUSER_EMAIL() {
@@ -108,5 +123,13 @@ public class MONKEY_USER {
 
     public void setUSER_STATUS(int USER_STATUS) {
         this.USER_STATUS = USER_STATUS;
+    }
+
+    public String getUSER_UPDATETIME() {
+        return USER_UPDATETIME;
+    }
+
+    public void setUSER_UPDATETIME(String USER_UPDATETIME) {
+        this.USER_UPDATETIME = USER_UPDATETIME;
     }
 }

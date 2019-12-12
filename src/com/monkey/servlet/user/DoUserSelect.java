@@ -23,6 +23,9 @@ public class DoUserSelect extends HttpServlet {
         //获取用户指定页面
         String cp = request.getParameter("cp");
 
+        //接受用户搜索的关键字
+        String keywords = request.getParameter("keywords");
+
         if (cp != null){
             cpage = Integer.parseInt(cp);
         }
@@ -31,7 +34,7 @@ public class DoUserSelect extends HttpServlet {
 
 
         //获取所有用户记录
-        ArrayList<MONKEY_USER> list = MONKEY_USERDao.selectAll();
+        ArrayList<MONKEY_USER> list = MONKEY_USERDao.selectAll(cpage,count,keywords);
 
         //放到请求对象域里
         request.setAttribute("userlist",list);

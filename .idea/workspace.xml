@@ -6,25 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9670a72-af4e-4fe9-a475-4adaf52d070f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/jiandx.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/jiandx.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/WEB-INF/classes/com/monkey/entity/MONKEY_USER.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/WEB-INF/classes/com/monkey/entity/MONKEY_USER.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/WEB-INF/classes/com/monkey/service/MONKEY_USERDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/WEB-INF/classes/com/monkey/service/MONKEY_USERDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/WEB-INF/classes/com/monkey/servlet/user/DoUserAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/WEB-INF/classes/com/monkey/servlet/user/DoUserAdd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/WEB-INF/classes/com/monkey/servlet/user/DoUserSelect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/WEB-INF/classes/com/monkey/servlet/user/DoUserSelect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/manage/admin_user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/manage/admin_user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/manage/admin_useradd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/manage/admin_useradd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/monkey/entity/MONKEY_USER.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/monkey/entity/MONKEY_USER.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/monkey/service/MONKEY_USERDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/monkey/service/MONKEY_USERDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/monkey/servlet/user/DoUserAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/monkey/servlet/user/DoUserAdd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/monkey/servlet/user/DoUserSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/monkey/servlet/user/DoUserSelect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/monkey/entity/MONKEY_USER.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/monkey/entity/MONKEY_USER.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/monkey/service/MONKEY_USERDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/monkey/service/MONKEY_USERDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/monkey/servlet/user/DoUserAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/monkey/servlet/user/DoUserAdd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/monkey/servlet/user/DoUserSelect.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/monkey/servlet/user/DoUserSelect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/manage/admin_user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/manage/admin_user.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="a9670a72-af4e-4fe9-a475-4adaf52d070f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/monkey/service/MONKEY_USERDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="87" column="50" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="50" />
+            <state relative-caret-position="335">
+              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -323,7 +305,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576142308351" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576142490588" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15882353" />
@@ -506,7 +488,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70323000" />
+    <option name="totallyTimeSpent" value="70486000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -519,9 +501,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.16099773" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16099773" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -531,13 +512,13 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3373174" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3373174" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3275488" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.16600266" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.16600266" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
@@ -794,8 +775,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/monkey/service/MONKEY_USERDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="87" column="50" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="50" />
+        <state relative-caret-position="335">
+          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

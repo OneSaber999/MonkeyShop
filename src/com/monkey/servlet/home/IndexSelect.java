@@ -18,6 +18,9 @@ public class IndexSelect extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //设置字符集
+        request.setCharacterEncoding("utf-8");
+        response.setContentType("text/html;charset=utf-8");
 
         ArrayList<MONKEY_CATEGORY> flist = MONKEY_CATEGORYDao.selectCat("father");
         request.setAttribute("flist",flist);

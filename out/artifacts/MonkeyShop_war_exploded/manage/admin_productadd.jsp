@@ -5,15 +5,75 @@
   Time: 17:04
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ include file="admin_menu.jsp" %>
-<!--/sidebar-->
+
+<%@ page language="java" contentType="text/html; charset=GBK"
+         pageEncoding="GBK"%>
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>∫ÛÃ®π‹¿Ì</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+</head>
+<body>
+<div class="topbar-wrap white">
+    <div class="topbar-inner clearfix">
+        <div class="topbar-logo-wrap clearfix">
+            <h1 class="topbar-logo none"><a href="index.html" class="navbar-brand">∫ÛÃ®π‹¿Ì</a></h1>
+            <ul class="navbar-list clearfix">
+                <li><a class="on" href="/manage/admin_index.jsp"> ◊“≥</a></li>
+                <li><a href="/index.jsp" target="_blank">Õ¯’æ ◊“≥</a></li>
+            </ul>
+        </div>
+        <div class="top-info-wrap">
+            <ul class="top-info-list clearfix">
+                <li><a href="#">π‹¿Ì‘±:${name.USER_NAME}</a></li>
+                <li><a href="#">–ﬁ∏ƒ√‹¬Î</a></li>
+                <li><a href="/manage/adminlogout">ÕÀ≥ˆ</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container clearfix">
+    <div class="sidebar-wrap">
+        <div class="sidebar-title">
+            <h1>≤Àµ•</h1>
+        </div>
+        <div class="sidebar-content">
+            <ul class="sidebar-list">
+                <li>
+                    <a href="#"><i class="icon-font">&#xe003;</i>≥£”√≤Ÿ◊˜</a>
+                    <ul class="sub-menu">
+                        <li><a href="/manage/admin_douserselect"><i class="icon-font">&#xe008;</i>”√ªßπ‹¿Ì</a></li>
+                        <li><a href="/manage/admin_cateselect"><i class="icon-font">&#xe005;</i>∑÷¿‡π‹¿Ì</a></li>
+                        <li><a href="/manage/admin_productselect"><i class="icon-font">&#xe004;</i>…Ã∆∑π‹¿Ì</a></li>
+                        <li><a href="admin_order.jsp"><i class="icon-font">&#xe012;</i>∂©µ•π‹¿Ì</a></li>
+                        <li><a href="admin_message.jsp"><i class="icon-font">&#xe052;</i>¡Ù—‘π‹¿Ì</a></li>
+                        <li><a href="admin_news.jsp"><i class="icon-font">&#xe033;</i>–¬Œ≈π‹¿Ì</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-font">&#xe018;</i>œµÕ≥π‹¿Ì</a>
+                    <ul class="sub-menu">
+                        <li><a href="system.html"><i class="icon-font">&#xe017;</i>œµÕ≥…Ë÷√</a></li>
+                        <li><a href="system.html"><i class="icon-font">&#xe037;</i>«Â¿Ìª∫¥Ê</a></li>
+                        <li><a href="system.html"><i class="icon-font">&#xe046;</i> ˝æ›±∏∑›</a></li>
+                        <li><a href="system.html"><i class="icon-font">&#xe045;</i> ˝æ›ªπ‘≠</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!--/sidebar-->
 <div class="main-wrap">
 
     <div class="crumb-wrap">
-        <div class="crumb-list"><i class="icon-font">ÓÄÄ</i><a href="/jscss/admin/design/">È¶ñÈ°µ</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="admin_user.jsp">ÂïÜÂìÅÁÆ°ÁêÜ</a><span class="crumb-step">&gt;</span><span>Êñ∞Â¢ûÂïÜÂìÅ</span></div>
+        <div class="crumb-list"><i class="icon-font">™°</i><a href="/jscss/admin/design/"> ◊“≥</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="admin_user.jsp">…Ã∆∑π‹¿Ì</a><span class="crumb-step">&gt;</span><span>–¬‘ˆ…Ã∆∑</span></div>
     </div>
     <div class="result-wrap">
         <div class="result-content">
@@ -21,13 +81,13 @@
                 <table class="insert-tab" width="100%">
                     <tbody>
                     <tr>
-                        <th><i class="require-red">*</i>ÂïÜÂìÅÂêçÁß∞Ôºö</th>
+                        <th><i class="require-red">*</i>…Ã∆∑√˚≥∆£∫</th>
                         <td>
                             <input class="common-text required" id="title" name="productName" size="50" value="" type="text">
                         </td>
                     </tr>
                     <tr>
-                        <th><i class="require-red">*</i>ÂïÜÂìÅÂàÜÁ±ªÔºö</th>
+                        <th><i class="require-red">*</i>…Ã∆∑∑÷¿‡£∫</th>
                         <td>
                             <select class="common-text required"  name="parentId">
 
@@ -44,25 +104,25 @@
                     </tr>
 
                     <tr>
-                        <th><i class="require-red">*</i>ÂïÜÂìÅÂõæÁâáÔºö</th>
+                        <th><i class="require-red">*</i>…Ã∆∑Õº∆¨£∫</th>
                         <td>
                             <input class="common-text required" id="title" name="photo" size="50" value="" type="file">
                         </td>
                     </tr>
                     <tr>
-                        <th><i class="require-red">*</i>ÂïÜÂìÅ‰ª∑Ê†ºÔºö</th>
+                        <th><i class="require-red">*</i>…Ã∆∑º€∏Ò£∫</th>
                         <td>
                             <input class="common-text required" id="title" name="productPrice" size="50" value="" type="text">
                         </td>
                     </tr>
                     <tr>
-                        <th><i class="require-red">*</i>ÂïÜÂìÅ‰ªãÁªçÔºö</th>
+                        <th><i class="require-red">*</i>…Ã∆∑ΩÈ…‹£∫</th>
                         <td>
                             <input class="common-text required" id="title" name="productDesc" size="50" value="" type="text">
                         </td>
                     </tr>
                     <tr>
-                        <th><i class="require-red">*</i>ÂïÜÂìÅÂ∫ìÂ≠òÔºö</th>
+                        <th><i class="require-red">*</i>…Ã∆∑ø‚¥Ê£∫</th>
                         <td>
                             <input class="common-text required" id="title" name="productStock" size="50" value="" type="text">
                         </td>
@@ -73,8 +133,8 @@
                     <tr>
                         <th></th>
                         <td>
-                            <input class="btn btn-primary btn6 mr10" value="Êèê‰∫§" type="submit">
-                            <input class="btn btn6" onClick="history.go(-1)" value="ËøîÂõû" type="button">
+                            <input class="btn btn-primary btn6 mr10" value="Ã·Ωª" type="submit">
+                            <input class="btn btn6" onClick="history.go(-1)" value="∑µªÿ" type="button">
                         </td>
                     </tr>
                     </tbody></table>

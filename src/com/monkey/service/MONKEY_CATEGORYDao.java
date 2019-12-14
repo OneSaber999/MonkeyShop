@@ -49,6 +49,51 @@ public class MONKEY_CATEGORYDao {
     }
 
     /**
+     * 查询分类,子分类和父分类
+     *
+     * @param flag == "father"   "child"
+     * @return
+     */
+    public static ArrayList<MONKEY_CATEGORY> selectCat(String flag) {
+        ArrayList<MONKEY_CATEGORY> list = new ArrayList<>();
+        //声明结果集
+        ResultSet rs = null;
+        //获取连接对象
+        Connection conn = BaseDao.getconn();
+
+        PreparedStatement ps = null;
+
+        try {
+            String sql = "";
+            if (flag != null && flag.equals("father")) {
+                sql = "select * from MONKEY_CATEGORY where CATE_PARENT_ID = 0";
+
+            } else {
+                sql = "select * from MONKEY_CATEGORY where CATE_PARENT_ID != 0";
+
+            }
+            ps = conn.prepareStatement(sql);
+            rs = ps.executeQuery();
+
+            while (rs.next()) {
+                MONKEY_CATEGORY cate = new MONKEY_CATEGORY(
+                        rs.getInt("CATE_ID"),
+                        rs.getString("CATE_NAME"),
+                        rs.getInt("CATE_PARENT_ID")
+                );
+                list.add(cate);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            BaseDao.closeall(rs, ps, conn);
+        }
+
+        return list;
+    }
+
+    /**
      * 添加分类
      *
      * @param cate
@@ -79,13 +124,14 @@ public class MONKEY_CATEGORYDao {
         return BaseDao.exectuIUD(sql, params);
 
     }
+
     //删除
-    public static int del(int id){
+    public static int del(int id) {
         String sql = "delete from MONKEY_CATEGORY where CATE_ID = ?";
 
         Object[] params = {id};
 
-        return BaseDao.exectuIUD(sql,params);
+        return BaseDao.exectuIUD(sql, params);
     }
 
     //通过id查询

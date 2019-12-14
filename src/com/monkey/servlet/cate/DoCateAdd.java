@@ -23,7 +23,7 @@ public class DoCateAdd extends HttpServlet {
         MONKEY_CATEGORY cate = new MONKEY_CATEGORY(0,name,fid);
         MONKEY_CATEGORYDao.insert(cate);
 
-        response.sendRedirect("admin_cateselect");
+        response.sendRedirect("admin_tocateadd");
 
     }
 

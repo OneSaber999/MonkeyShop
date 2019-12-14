@@ -1,4 +1,4 @@
-package com.monkey.servlet.cate;
+package com.monkey.servlet.home;
 
 import com.monkey.entity.MONKEY_CATEGORY;
 import com.monkey.service.MONKEY_CATEGORYDao;
@@ -9,16 +9,22 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
 
-@WebServlet("/manage/admin_docatedel")
-public class DoCateDel extends HttpServlet {
+@WebServlet("/indexselect")
+public class IndexSelect extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        doGet(request,response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int id = Integer.parseInt(request.getParameter("id"));
-        MONKEY_CATEGORYDao.del(id);
-        response.sendRedirect("admin_cateselect");
+
+        ArrayList<MONKEY_CATEGORY> flist = MONKEY_CATEGORYDao.selectCat("father");
+        request.setAttribute("flist",flist);
+        ArrayList<MONKEY_CATEGORY> clist = MONKEY_CATEGORYDao.selectCat("child");
+        request.setAttribute("clist",clist);
+
+        request.getRequestDispatcher("index.jsp").forward(request,response);
+
     }
 }

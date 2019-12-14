@@ -1,7 +1,4 @@
-package com.monkey.servlet.cate;
-
-import com.monkey.entity.MONKEY_CATEGORY;
-import com.monkey.service.MONKEY_CATEGORYDao;
+package com.monkey.servlet.product;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,15 +7,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/manage/admin_docatedel")
-public class DoCateDel extends HttpServlet {
+@WebServlet("/manage/admin_productselect")
+public class ProductSelect extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int id = Integer.parseInt(request.getParameter("id"));
-        MONKEY_CATEGORYDao.del(id);
-        response.sendRedirect("admin_cateselect");
+
+
+        request.getRequestDispatcher("admin_product.jsp").forward(request,response);
     }
 }

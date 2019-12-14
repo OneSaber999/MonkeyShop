@@ -18,6 +18,29 @@ create table `monkey_user`(
 	primary key(`USER_ID`)
 )ENGINE=InnoDB default charset=utf8;
 
+drop table if exists `momkey_category`;
+
+create table `monkey_category`(
+	CATE_ID int(10) not null auto_increment,
+	CATE_NAME varchar(20) not null,
+	CATE_PARENT_ID decimal(10,0) not null,
+	primary key(`CATE_ID`)
+)ENGINE=InnoDB default charset=utf8;
+
+drop table if exists `monkey_product`;
+
+create table `monkey_product`(
+	PRODUCT_ID int(10) not null auto_increment,
+	PRODUCT_NAME varchar(128) not null,
+	PRODUCT_DESCRIPTION varchar(512) default null,
+	PRODUCT_PRICE decimal(10,2) not null,
+	PRODUCT_STOCK decimal(10,0) default null,
+	PRODUCT_FID decimal(10,0) default null,
+	PRODUCT_CID decimal(10,0) default null,
+	PRODUCT_FILENAME varchar(200) default null,
+	primary key (`PRODUCT_ID`)	
+)ENGINE=InnoDB default charset=utf8;
+
 
 alter table monkey_user change USER_UPDATETIME USER_UPDATETIME timestamp not null 
 default current_timestamp on update current_timestamp;

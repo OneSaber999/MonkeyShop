@@ -64,11 +64,41 @@ public class MONKEY_USERDao {
         return BaseDao.exectuIUD(sql,params);
     }
 
+    public static int selectByName(String id) {
+        int count = 0;
+
+        Connection conn = BaseDao.getconn();
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        try {
+
+            String sql = "select count(*) from MONKEY_USER where USER_ID = ?";
+            ps = conn.prepareStatement(sql);
+            ps.setString(1, id);
+
+            rs = ps.executeQuery();
+
+            while (rs.next()) {
+                count= rs.getInt(1);
+
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            BaseDao.closeall(rs, ps, conn);
+        }
+        return count;
+
+    }
+
+
     /**
      * 获取总页数和总记录数
      *
      *
      */
+
+
 
     public static int[] totalPage(int count,String keywords) {
         //0 总记录数  1 总页数

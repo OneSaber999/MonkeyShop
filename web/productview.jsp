@@ -61,7 +61,7 @@
                 </div>
                 <div class="btns clearfix">
                     <a href="javascript:shopAdd(${p.PRODUCT_ID },'z')"><p class="buy fl">立即购买</p></a>
-                    <a href="javascript:shopAdd(${p.PRODUCT_ID },'s')""><p class="cart fr"> 加入购物车</p></a></div>
+                    <a href="javascript:shopAdd(${p.PRODUCT_ID },'s')"><p class="cart fr"> 加入购物车</p></a></div>
             </div>
         </div>
     </div>

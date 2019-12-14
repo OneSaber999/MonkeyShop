@@ -41,6 +41,22 @@ create table `monkey_product`(
 	primary key (`PRODUCT_ID`)	
 )ENGINE=InnoDB default charset=utf8;
 
+drop table if exists `monkey_cart`;
+
+create table `monkey_cart`(
+	CART_ID int(11) not null auto_increment,
+	CART_P_FILENAME varchar(128) default null,
+	CART_NAME varchar(64) default null,
+	CART_P_PRICE decimal(10,2) not null,
+	CART_QUANTITY int(11) default null,
+	CART_P_STOCK int(11) default null,
+	CART_P_ID int(11) default null,
+	CART_U_ID varchar(64) default null,
+	CART_VALID int(11) default null,
+	
+	primary key (`CART_ID`)	
+)ENGINE=InnoDB default charset=utf8;
+
 
 alter table monkey_user change USER_UPDATETIME USER_UPDATETIME timestamp not null 
 default current_timestamp on update current_timestamp;

@@ -61,7 +61,7 @@
 
                     <script>
                         function catedel(id) {
-                            if(confirm("你确认要删除这个分类吗")) {
+                            if(confirm("确定删除这个分类吗")) {
                                 location.href="admin_docatedel?id="+id;
 
                             }

@@ -14,7 +14,7 @@ import java.io.PrintWriter;
 @WebServlet("/manage/admin_douserupdate")
 public class DoUserUpdate extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//设置字符集
+        //设置字符集
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
 

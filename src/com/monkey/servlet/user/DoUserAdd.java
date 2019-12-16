@@ -29,8 +29,15 @@ public class DoUserAdd extends HttpServlet {
         String email = request.getParameter("email");
         String mobile = request.getParameter("mobile");
         String address = request.getParameter("address");
+        //只有admin是管理员账户
+        int status = 0;
+        if (username.equals("admin")){
+            status = 2;
+        }else {
+            status = 1;
+        }
 
-        MONKEY_USER u = new MONKEY_USER(username,name,pwd,sex,year,null,email,mobile,address,1);
+        MONKEY_USER u = new MONKEY_USER(username,name,pwd,sex,year,null,email,mobile,address,status);
         //加入到数据库的用户表中
 
         int count = MONKEY_USERDao.insert(u);

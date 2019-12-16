@@ -12,7 +12,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "AdminLogin")
+@WebServlet("/manage/adminlogin")
 public class AdminLogin extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //设置字符集
@@ -27,15 +27,20 @@ public class AdminLogin extends HttpServlet {
         if (count > 0) {
 
             MONKEY_USER user = MONKEY_USERDao.selectAdmin(username,password);
-
-            if (user.getUSER_STATUS() == 2){
-
-            }
             HttpSession session = request.getSession();
             session.setAttribute("name",user);
             session.setAttribute("isLogin","1");
+            session.setAttribute("isAdminLogin","1");
+            if (user.getUSER_STATUS() == 2){
 
-            response.sendRedirect("index.jsp");
+                session.setAttribute("isAdminLogin","1" );
+                response.sendRedirect("/manage/admin_index.jsp");
+
+            }else {
+                response.sendRedirect("/index.jsp");
+
+            }
+
         } else {
             PrintWriter out = response.getWriter();
             out.write("<Script>");

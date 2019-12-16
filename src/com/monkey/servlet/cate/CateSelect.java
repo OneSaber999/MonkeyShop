@@ -18,9 +18,13 @@ public class CateSelect extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //设置字符集
+        request.setCharacterEncoding("utf-8");
+        response.setContentType("text/html;charset=utf-8");
         ArrayList<MONKEY_CATEGORY> catelist = MONKEY_CATEGORYDao.selectAll();
 
+
         request.setAttribute("catelist",catelist);
-        request.getRequestDispatcher("cate.jsp").forward(request,response);
+        request.getRequestDispatcher("admin_cate.jsp").forward(request,response);
     }
 }

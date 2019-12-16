@@ -34,10 +34,10 @@ public class AdminLogin implements Filter {
                 chain.doFilter(req, resp);
             } else {
                 PrintWriter out = response.getWriter();
-                out.write("<Script>");
+                out.write("<script>");
                 out.write("alert('请先登录');");
                 out.write("location.href='login.jsp';");
-                out.write("</Script>");
+                out.write("</script>");
                 out.close();
                 return;
             }

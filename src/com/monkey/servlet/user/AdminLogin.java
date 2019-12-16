@@ -43,10 +43,10 @@ public class AdminLogin extends HttpServlet {
 
         } else {
             PrintWriter out = response.getWriter();
-            out.write("<Script>");
+            out.write("<script>");
             out.write("alert('用户登陆失败');");
             out.write("location.href='login.jsp';");
-            out.write("</Script>");
+            out.write("</script>");
             out.close();
 
         }

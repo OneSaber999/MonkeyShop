@@ -43,7 +43,7 @@ public class RegisterServlet extends HttpServlet {
             out.write("alert('用户注册失败')");
             out.write("location.href='reg.jsp'");
             out.write("</script>");
-
+            out.close();
         }
     }
 

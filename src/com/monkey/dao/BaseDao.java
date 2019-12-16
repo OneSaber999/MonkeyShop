@@ -17,7 +17,7 @@ public class BaseDao {
         //创建一个连接对象
         Connection conn = null;
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/monkeyshop?useSSL=false&serverTimezone=UTC","root","123456");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/monkeyshop?useSSL=false&serverTimezone=UTC&useOldAliasMetadataBehavior=true","root","123456");
         } catch (SQLException e) {
             e.printStackTrace();
         }

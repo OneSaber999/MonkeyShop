@@ -30,14 +30,14 @@ public class AdminLogin extends HttpServlet {
             HttpSession session = request.getSession();
             session.setAttribute("name",user);
             session.setAttribute("isLogin","1");
-            session.setAttribute("isAdminLogin","1");
+            //session.setAttribute("isAdminLogin","1");
             if (user.getUSER_STATUS() == 2){
 
                 session.setAttribute("isAdminLogin","1" );
                 response.sendRedirect("/manage/admin_index.jsp");
 
             }else {
-                response.sendRedirect("/index.jsp");
+                response.sendRedirect("/indexselect");
 
             }
 

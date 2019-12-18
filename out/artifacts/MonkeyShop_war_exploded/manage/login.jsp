@@ -11,7 +11,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>『学习猿地』后台管理</title>
+    <title>『MonkeyShop』后台管理</title>
     <link rel="stylesheet" type="text/css" href="css/admin_login.css"/>
 </head>
 <body>

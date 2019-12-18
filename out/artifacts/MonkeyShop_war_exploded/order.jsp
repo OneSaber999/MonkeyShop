@@ -113,7 +113,7 @@
                     <ul class="clearfix">
                         <li class="fl"><img width="100" height="100" src="images/product/${rs.CART_P_FILENAME}"></li>
                         <li class="fl"><p>${rs.CART_P_NAME }</p>
-                            <p>颜色分类：烟灰色玻璃瓶</p>
+                            <p>版本分类：特典版</p>
                             <p>数量：${rs.CART_QUANTITY}</p></li>
                         <li class="fr">￥${rs.CART_P_PRICE * rs.CART_QUANTITY}.00</li>
                     </ul>

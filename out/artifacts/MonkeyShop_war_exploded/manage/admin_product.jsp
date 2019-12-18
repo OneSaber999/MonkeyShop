@@ -43,17 +43,16 @@
 
                             </td>
                             <td>
-                                <a href="">修改</a>
-                                <a href="">删除</a>
+                                <a href="admin_toproductupdate?id=${p.PRODUCT_ID }">修改</a>
+                                <a href="javascript:productdel(${p.PRODUCT_ID })">删除</a>
                             </td>
                         </tr>
                     </c:forEach>
 
-
                     <script>
-                        function catedel(id) {
-                            if(confirm("你确认要删除这个分类吗")) {
-                                location.href="admin_docatedel?id="+id;
+                        function productdel(id) {
+                            if(confirm("你确认要删除这件商品吗")) {
+                                location.href="admin_doproductdel?id="+id;
 
                             }
                         }
@@ -61,8 +60,16 @@
 
                     </script>
 
-                </table>
 
+
+                </table>
+                <div class="list-page">
+                    <a href="/manage/admin_productselect?cp=1${SearchParams}">首页</a>
+                    <a href="/manage/admin_productselect?cp=${cpage-1<1?1:cpage-1}${SearchParams}">上一页</a>
+                    共${tsum}条 ${cpage}/${tpage} 页
+                    <a href="/manage/admin_productselect?cp=${cpage+1>tpage?tpage:cpage+1}${SearchParams}">下一页</a>
+                    <a href="/manage/admin_productselect?cp=${tpage}${SearchParams}">尾页</a>
+                </div>
             </div>
         </form>
     </div>

@@ -22,9 +22,25 @@ public class ProductSelect extends HttpServlet {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
 
-        ArrayList<MONKEY_PRODUCT> plist = MONKEY_PRODUCTDao.selectAll();
+        int cpage = 1; //当前页
+        int count = 5; //每页显示条数
 
+        //获取指定页面
+        String cp = request.getParameter("cp");
+
+        if (cp != null){
+            cpage = Integer.parseInt(cp);
+        }
+
+        int arr[] = MONKEY_PRODUCTDao.totalPage(count);
+
+        ArrayList<MONKEY_PRODUCT> plist = MONKEY_PRODUCTDao.selectAll(cpage,count);
+
+        //放到请求对象域里
         request.setAttribute("plist",plist);
+        request.setAttribute("tsum",arr[0]);
+        request.setAttribute("tpage",arr[1]);
+        request.setAttribute("cpage",cpage);
 
         request.getRequestDispatcher("admin_product.jsp").forward(request,response);
     }

@@ -7,41 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9670a72-af4e-4fe9-a475-4adaf52d070f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/monkey/service/MONKEY_CARTDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/monkey/servlet/cart/CartAdd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/monkey/servlet/cart/CartShopDel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/monkey/servlet/cart/CartShopNumAdd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/monkey/servlet/cart/OrderSelect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/monkey/servlet/cart/ShowCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/cart.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/233.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/Nintendo Switch.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/NintendoSwitch.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/logo.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/tc1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/manage/system.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/order.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/monkey/servlet/product/DoProductDel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/monkey/servlet/product/DoProductUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/monkey/servlet/product/ToProductUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/manage/admin_productmodify.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/WEB-INF/classes/com/monkey/servlet/user/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/WEB-INF/classes/com/monkey/servlet/user/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/js/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/js/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/manage/admin_index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/manage/admin_index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/mygxin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/mygxin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/productview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/productview.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/readme.MD" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/readme.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/monkey/entity/MONKEY_CART.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/monkey/entity/MONKEY_CART.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/monkey/servlet/user/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/monkey/servlet/user/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/monkey/servlet/user/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/monkey/servlet/user/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/manage/admin_index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/manage/admin_index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/manage/admin_menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/manage/admin_menu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/mygxin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/mygxin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/WEB-INF/classes/com/monkey/service/MONKEY_PRODUCTDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/WEB-INF/classes/com/monkey/service/MONKEY_PRODUCTDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/WEB-INF/classes/com/monkey/servlet/product/ProductSelect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/WEB-INF/classes/com/monkey/servlet/product/ProductSelect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/WEB-INF/classes/com/monkey/servlet/user/DoUserAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/WEB-INF/classes/com/monkey/servlet/user/DoUserAdd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/WEB-INF/classes/com/monkey/servlet/user/DoUserUpdate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/WEB-INF/classes/com/monkey/servlet/user/DoUserUpdate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/manage/admin_product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/manage/admin_product.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/manage/admin_productadd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/manage/admin_productadd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/monkey/service/MONKEY_PRODUCTDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/monkey/service/MONKEY_PRODUCTDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/monkey/servlet/product/ProductSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/monkey/servlet/product/ProductSelect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/monkey/servlet/user/DoUserAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/monkey/servlet/user/DoUserAdd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/monkey/servlet/user/DoUserUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/monkey/servlet/user/DoUserUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/monkey/service/MONKEY_PRODUCTDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/monkey/service/MONKEY_PRODUCTDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/monkey/servlet/product/ProductSelect.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/monkey/servlet/product/ProductSelect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/monkey/servlet/user/DoUserAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/monkey/servlet/user/DoUserAdd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/monkey/servlet/user/DoUserUpdate.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/monkey/servlet/user/DoUserUpdate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/manage/admin_product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/manage/admin_product.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/manage/admin_productadd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/manage/admin_productadd.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,58 +79,91 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/header.jsp">
+        <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/product/DoProductUpdate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-86">
-              <caret line="33" column="84" lean-forward="true" selection-start-line="33" selection-start-column="84" selection-end-line="33" selection-end-column="84" />
+            <state relative-caret-position="187">
+              <caret line="63" column="10" lean-forward="true" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+        <entry file="file://$PROJECT_DIR$/web/manage/admin_product.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="45" column="29" lean-forward="true" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/manage/admin_index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/manage/admin_menu.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="55" column="21" lean-forward="true" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+            <state relative-caret-position="249">
+              <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/manage/system.jsp">
+        <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/product/DoProductDel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="61" column="67" selection-start-line="61" selection-start-column="67" selection-end-line="61" selection-end-column="67" />
+            <state relative-caret-position="304">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/manage/system.html">
+        <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/cate/DoCateDel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="123" column="36" lean-forward="true" selection-start-line="123" selection-start-column="36" selection-end-line="123" selection-end-column="36" />
-              <folding>
-                <element signature="e#2818#2822#1" expanded="true" />
-              </folding>
+            <state relative-caret-position="247">
+              <caret line="21" column="50" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="21" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/monkey/service/MONKEY_USERDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/cate/DoCateAdd.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/cate/DoCateUpdate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="23" column="63" lean-forward="true" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/monkey/service/MONKEY_PRODUCTDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/manage/admin_productmodify.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="119" column="70" lean-forward="true" selection-start-line="119" selection-start-column="70" selection-end-line="119" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/user/DoUserUpdate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
@@ -173,6 +192,7 @@
       <find>bASEDAO</find>
       <find>Basedao</find>
       <find>LMONKEY</find>
+      <find>update</find>
     </findStrings>
     <replaceStrings>
       <replace>IDENTITY</replace>
@@ -187,13 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/monkey/entity/MONKEY_CATEGORY.java" />
-        <option value="$PROJECT_DIR$/src/com/monkey/filter/AdminLogin.java" />
-        <option value="$PROJECT_DIR$/web/manage/admin_user.jsp" />
-        <option value="$PROJECT_DIR$/web/manage/admin_useradd.jsp" />
-        <option value="$PROJECT_DIR$/web/manage/admin_usermodify.jsp" />
-        <option value="$PROJECT_DIR$/web/manage/login.jsp" />
-        <option value="$PROJECT_DIR$/web/manage/css/admin_login.css" />
         <option value="$PROJECT_DIR$/src/com/monkey/servlet/user/AdminLogin.java" />
         <option value="$PROJECT_DIR$/web/manage/admin_cate.jsp" />
         <option value="$PROJECT_DIR$/src/com/monkey/servlet/cate/ToCateAdd.java" />
@@ -202,20 +215,16 @@
         <option value="$PROJECT_DIR$/src/com/monkey/service/MONKEY_CATEGORYDao.java" />
         <option value="$PROJECT_DIR$/src/com/monkey/servlet/home/IndexServlet.java" />
         <option value="$PROJECT_DIR$/src/com/monkey/servlet/cate/DoCateAdd.java" />
-        <option value="$PROJECT_DIR$/web/manage/admin_product.jsp" />
         <option value="$PROJECT_DIR$/src/com/monkey/entity/MONKEY_PRODUCT.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/com/monkey/service/MONKEY_PRODUCTDao.java" />
         <option value="$PROJECT_DIR$/web/productlist.jsp" />
         <option value="$PROJECT_DIR$/src/com/monkey/servlet/product/ToProductAdd.java" />
         <option value="$PROJECT_DIR$/src/com/monkey/servlet/home/IndexSelect.java" />
         <option value="$PROJECT_DIR$/src/com/monkey/servlet/home/SelectProductList.java" />
         <option value="$PROJECT_DIR$/src/com/monkey/servlet/home/SelectProductView.java" />
-        <option value="$PROJECT_DIR$/src/com/monkey/servlet/product/ProductSelect.java" />
         <option value="$PROJECT_DIR$/src/com/monkey/servlet/cate/CateSelect.java" />
         <option value="$PROJECT_DIR$/src/com/jspsmart/upload/SmartUpload.java" />
         <option value="$PROJECT_DIR$/src/com/monkey/servlet/product/DoProductAdd.java" />
-        <option value="$PROJECT_DIR$/web/manage/admin_productadd.jsp" />
         <option value="$PROJECT_DIR$/web/readme.MD" />
         <option value="$PROJECT_DIR$/web/productview.jsp" />
         <option value="$PROJECT_DIR$/src/com/monkey/entity/MONKEY_CART.java" />
@@ -238,6 +247,17 @@
         <option value="$PROJECT_DIR$/web/manage/admin_menu.jsp" />
         <option value="$PROJECT_DIR$/web/manage/system.html" />
         <option value="$PROJECT_DIR$/web/manage/system.jsp" />
+        <option value="$PROJECT_DIR$/web/manage/admin_user.jsp" />
+        <option value="$PROJECT_DIR$/src/com/monkey/servlet/product/ProductSelect.java" />
+        <option value="$PROJECT_DIR$/web/manage/admin_product.jsp" />
+        <option value="$PROJECT_DIR$/web/manage/admin_productadd.jsp" />
+        <option value="$PROJECT_DIR$/web/manage/admin_productmodify.jsp" />
+        <option value="$PROJECT_DIR$/src/com/monkey/servlet/product/ToProductUpdate.java" />
+        <option value="$PROJECT_DIR$/src/com/monkey/servlet/user/DoUserAdd.java" />
+        <option value="$PROJECT_DIR$/src/com/monkey/servlet/user/DoUserUpdate.java" />
+        <option value="$PROJECT_DIR$/src/com/monkey/service/MONKEY_PRODUCTDao.java" />
+        <option value="$PROJECT_DIR$/src/com/monkey/servlet/product/DoProductUpdate.java" />
+        <option value="$PROJECT_DIR$/src/com/monkey/servlet/product/DoProductDel.java" />
       </list>
     </option>
   </component>
@@ -249,9 +269,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="484" />
+    <option name="x" value="306" />
+    <option name="y" value="196" />
     <option name="width" value="1368" />
-    <option name="height" value="1061" />
+    <option name="height" value="1059" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -288,7 +309,61 @@
               <item name="MonkeyShop" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="monkey" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonkeyShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonkeyShop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="monkey" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonkeyShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonkeyShop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="monkey" type="462c0819:PsiDirectoryNode" />
               <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonkeyShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonkeyShop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="monkey" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+              <item name="cart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonkeyShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonkeyShop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="monkey" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+              <item name="cate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonkeyShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonkeyShop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="monkey" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonkeyShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonkeyShop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="monkey" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonkeyShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonkeyShop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="monkey" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MonkeyShop" type="b2602c69:ProjectViewProjectNode" />
@@ -540,12 +615,12 @@
       <workItem from="1576315264666" duration="28207000" />
       <workItem from="1576314660187" duration="1098000" />
       <workItem from="1576315797549" duration="7127000" />
-      <workItem from="1576313725105" duration="13367000" />
+      <workItem from="1576313725105" duration="22026000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176964000" />
+    <option name="totallyTimeSpent" value="185623000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -560,23 +635,23 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.899841" visible="true" weight="0.13272922" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8993711" visible="true" weight="0.13272922" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Web" order="6" sideWeight="0.10015898" side_tool="true" visible="true" weight="0.13272922" />
+      <window_info id="Web" order="6" sideWeight="0.10062893" side_tool="true" visible="true" weight="0.13272922" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3177874" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31019524" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997344" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32934928" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32669324" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.15208334" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.15102482" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -640,235 +715,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/home/SelectProductList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/home/SelectProductView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/smartupload.jar!/com/jspsmart/upload/Files.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="14" column="34" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/smartupload.jar!/com/jspsmart/upload/Request.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="14" column="15" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jspsmart/upload/File.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/jspsmart/upload/Files.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/jspsmart/upload/Request.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/jspsmart/upload/SmartUploadException.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/jspsmart/upload/SmartUpload.java" />
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/smartupload.jar!/com/jspsmart/upload/SmartUpload.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="300" column="29" lean-forward="true" selection-start-line="300" selection-start-column="29" selection-end-line="300" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/smartupload.jar!/com/jspsmart/upload/SmartUploadException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/smartupload.jar!/com/jspsmart/upload/File.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="6" selection-end-line="207" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/product/DoProductAdd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/manage/admin_productadd.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/images/product/Bliss-bliss.jpg" />
-    <entry file="file://$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/images/product/banner2.jpg" />
-    <entry file="file://$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/images/product/flo3.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/MonkeyShop_war_exploded/images/product/flo2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/readme.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="606">
-            <caret line="36" column="45" lean-forward="true" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/productview.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="66" column="10" lean-forward="true" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/monkey/entity/MONKEY_PRODUCT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1520">
-          <caret line="80" column="32" lean-forward="true" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
-          <folding>
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#932#933#0" expanded="true" />
-            <element signature="e#981#982#0" expanded="true" />
-            <element signature="e#1025#1026#0" expanded="true" />
-            <element signature="e#1064#1065#0" expanded="true" />
-            <element signature="e#1099#1100#0" expanded="true" />
-            <element signature="e#1155#1156#0" expanded="true" />
-            <element signature="e#1203#1204#0" expanded="true" />
-            <element signature="e#1249#1250#0" expanded="true" />
-            <element signature="e#1291#1292#0" expanded="true" />
-            <element signature="e#1361#1362#0" expanded="true" />
-            <element signature="e#1423#1424#0" expanded="true" />
-            <element signature="e#1460#1461#0" expanded="true" />
-            <element signature="e#1496#1497#0" expanded="true" />
-            <element signature="e#1551#1552#0" expanded="true" />
-            <element signature="e#1601#1602#0" expanded="true" />
-            <element signature="e#1638#1639#0" expanded="true" />
-            <element signature="e#1674#1675#0" expanded="true" />
-            <element signature="e#1729#1730#0" expanded="true" />
-            <element signature="e#1779#1780#0" expanded="true" />
-            <element signature="e#1814#1815#0" expanded="true" />
-            <element signature="e#1848#1849#0" expanded="true" />
-            <element signature="e#1899#1900#0" expanded="true" />
-            <element signature="e#1945#1946#0" expanded="true" />
-            <element signature="e#1980#1981#0" expanded="true" />
-            <element signature="e#2014#2015#0" expanded="true" />
-            <element signature="e#2065#2066#0" expanded="true" />
-            <element signature="e#2111#2112#0" expanded="true" />
-            <element signature="e#2154#2155#0" expanded="true" />
-            <element signature="e#2193#2194#0" expanded="true" />
-            <element signature="e#2257#2258#0" expanded="true" />
-            <element signature="e#2313#2314#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/monkey/entity/MONKEY_CART.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#925#926#0" expanded="true" />
-            <element signature="e#968#969#0" expanded="true" />
-            <element signature="e#1006#1007#0" expanded="true" />
-            <element signature="e#1048#1049#0" expanded="true" />
-            <element signature="e#1086#1087#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="e#1202#1203#0" expanded="true" />
-            <element signature="e#1240#1241#0" expanded="true" />
-            <element signature="e#1274#1275#0" expanded="true" />
-            <element signature="e#1328#1329#0" expanded="true" />
-            <element signature="e#1374#1375#0" expanded="true" />
-            <element signature="e#1410#1411#0" expanded="true" />
-            <element signature="e#1445#1446#0" expanded="true" />
-            <element signature="e#1498#1499#0" expanded="true" />
-            <element signature="e#1546#1547#0" expanded="true" />
-            <element signature="e#1583#1584#0" expanded="true" />
-            <element signature="e#1619#1620#0" expanded="true" />
-            <element signature="e#1674#1675#0" expanded="true" />
-            <element signature="e#1724#1725#0" expanded="true" />
-            <element signature="e#1760#1761#0" expanded="true" />
-            <element signature="e#1795#1796#0" expanded="true" />
-            <element signature="e#1848#1849#0" expanded="true" />
-            <element signature="e#1896#1897#0" expanded="true" />
-            <element signature="e#1929#1930#0" expanded="true" />
-            <element signature="e#1961#1962#0" expanded="true" />
-            <element signature="e#2008#2009#0" expanded="true" />
-            <element signature="e#2050#2051#0" expanded="true" />
-            <element signature="e#2086#2087#0" expanded="true" />
-            <element signature="e#2118#2119#0" expanded="true" />
-            <element signature="e#2168#2169#0" expanded="true" />
-            <element signature="e#2210#2211#0" expanded="true" />
-            <element signature="e#2244#2245#0" expanded="true" />
-            <element signature="e#2277#2278#0" expanded="true" />
-            <element signature="e#2326#2327#0" expanded="true" />
-            <element signature="e#2370#2371#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/monkey/service/MONKEY_CATEGORYDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/user/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/home/IndexSelect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/mygxin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="128" column="26" selection-start-line="128" selection-start-column="26" selection-end-line="128" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/cart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/cart/CartAdd.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -978,10 +824,17 @@
     <entry file="file://$PROJECT_DIR$/web/img/grzx.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/header.jsp">
+    <entry file="file://$PROJECT_DIR$/web/manage/system.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86">
-          <caret line="33" column="84" lean-forward="true" selection-start-line="33" selection-start-column="84" selection-end-line="33" selection-end-column="84" />
+        <state relative-caret-position="318">
+          <caret line="73" column="71" selection-start-line="73" selection-start-column="71" selection-end-line="73" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/manage/admin_index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-209">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -992,17 +845,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/manage/admin_index.jsp">
+    <entry file="file://$PROJECT_DIR$/web/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/manage/admin_menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="55" column="21" lean-forward="true" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+        <state relative-caret-position="67">
+          <caret line="33" column="84" lean-forward="true" selection-start-line="33" selection-start-column="84" selection-end-line="33" selection-end-column="84" />
         </state>
       </provider>
     </entry>
@@ -1016,10 +862,204 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/manage/system.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/user/DoUserSelect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="61" column="67" selection-start-line="61" selection-start-column="67" selection-end-line="61" selection-end-column="67" />
+        <state relative-caret-position="399">
+          <caret line="42" column="44" lean-forward="true" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/product/ProductSelect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="38" column="18" lean-forward="true" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/manage/admin_cate.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="43" column="32" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/manage/admin_user.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="57" column="41" lean-forward="true" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/product/ToProductAdd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="29" column="87" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="29" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/manage/admin_menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="6" selection-start-line="11" selection-end-line="67" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/monkey/entity/MONKEY_PRODUCT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/manage/admin_productadd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="78" column="125" selection-start-line="78" selection-start-column="125" selection-end-line="78" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/manage/admin_useradd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-33" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/manage/admin_catemodify.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-394">
+          <caret line="21" column="55" lean-forward="true" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/manage/admin_usermodify.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/cate/ToCateUpdate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="26" column="77" lean-forward="true" selection-start-line="26" selection-start-column="77" selection-end-line="26" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/cate/ToCateAdd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/user/ToUserUpdate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/product/DoProductAdd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-489">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/user/DoUserAdd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="49" column="51" lean-forward="true" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/monkey/entity/MONKEY_CATEGORY.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/product/ToProductUpdate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="33" column="37" lean-forward="true" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/monkey/service/MONKEY_CATEGORYDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/monkey/service/MONKEY_PRODUCTDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/cate/DoCateUpdate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="23" column="63" lean-forward="true" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/cate/DoCateAdd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/user/DoUserUpdate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/monkey/service/MONKEY_USERDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/product/DoProductUpdate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="63" column="10" lean-forward="true" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/manage/admin_productmodify.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="119" column="70" lean-forward="true" selection-start-line="119" selection-start-column="70" selection-end-line="119" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/cate/DoCateDel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="21" column="50" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="21" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/manage/admin_product.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/monkey/servlet/product/DoProductDel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>

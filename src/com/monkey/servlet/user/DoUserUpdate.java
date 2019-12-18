@@ -47,7 +47,7 @@ public class DoUserUpdate extends HttpServlet {
             PrintWriter out = response.getWriter();
 
             out.write("<script>");
-            out.write("alert('用户添加失败')");
+            out.write("alert('用户修改失败')");
             out.write("location.href='manage/admin_touserupdate?id="+username+"'");
             out.write("</script>");
 

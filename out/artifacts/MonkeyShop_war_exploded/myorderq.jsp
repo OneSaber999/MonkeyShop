@@ -22,85 +22,49 @@
                     <li><a href="#2l">待收货</a></li>
                     <li><a href="#2">已关闭</a></li>
                 </ul>
-                <form action="#" method="get" class="fr clearfix"><input type="text" name="" id="" value=""
-                                                                         placeholder="请输入商品名称、订单号"/><input type="button"
-                                                                                                           name="" id=""
-                                                                                                           value=""/>
+                <form action="#" method="get" class="fr clearfix">
+                    <input type="text" name="" id="" value="" placeholder="请输入商品名称、订单号"/>
+                    <input type="button" name="" id="" value=""/>
                 </form>
             </div>
             <div class="dkuang"><p class="one">已收货</p>
                 <div class="word clearfix">
                     <ul class="fl clearfix">
-                        <li>2016年12月1日 18:53</li>
+                        <li>2019年12月17日 18:53</li>
                         <li>杨小黄</li>
                         <li>订单号:5160513358520018</li>
                         <li>在线支付</li>
                     </ul>
-                    <p class="fr">订单金额：<span>99.00</span>元</p></div>
-                <div class="shohou clearfix"><a href="#" class="fl"><img src="img/g1.jpg"/></a>
-                    <p class="fl"><a href="#">家用创意菜盘子圆盘 釉下彩复古</a><a href="#">¥99.00×1</a></p>
-                    <p class="fr"><a href="myprod.html">待评价</a><a href="orderxq.html">订单详情</a></p></div>
+                    <p class="fr">订单金额：<span>349.00</span>元</p></div>
+                <div class="shohou clearfix"><a href="#" class="fl"><img src="img/temp/hyzx.png"/></a>
+                    <p class="fl"><a href="#">塞尔达传说:荒野之息</a><a href="#">¥349.00×1</a></p>
+                    <p class="fr"><a href="myprod.jsp">待评价</a><a href="orderxq.jsp">订单详情</a></p></div>
             </div>
             <div class="dkuang clearfix deng"><p class="one fl">待收货</p>
                 <div class="clearfix">
-                    <div class="fl vewwl"><a href="wuliu.html" class="ckwl">查看物流</a>
+                    <div class="fl vewwl"><a href="wuliu.jsp" class="ckwl">查看物流</a>
                         <div class="wuliu"><h4>圆通速递：858888888888888</h4>
                             <ul>
                                 <li><p>妥投投递并签收，已签收。签收人：本人签收</p>
-                                    <p>2016-12-03 17:30:00</p></li>
+                                    <p>2019-12-13 17:30:00</p></li>
                                 <li><p>深圳市南油速递营销部安排投递（投递员姓名：六六六。联系电话：14243452522;</p>
-                                    <p>2016-12-03 08:50:00</p></li>
+                                    <p>2019-12-14 08:50:00</p></li>
                                 <li><p>到达广东省邮政速递物流有限公司深圳航空邮件处理中心处理中心（经转）</p>
-                                    <p>2016-12-03 02:20:00</p></li>
+                                    <p>2019-12-15 02:20:00</p></li>
                                 <li>以上为最新跟踪信息<a href="wuliu.html">查看全部</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="word clearfix">
-                    <ul class="fl clearfix">
-                        <li>2016年12月1日 18:53</li>
-                        <li>杨小黄</li>
-                        <li>订单号:5160513358520018</li>
-                        <li>在线支付</li>
-                    </ul>
-                    <p class="fr">订单金额：<span>99.00</span>元</p></div>
-                <div class="shohou clearfix"><a href="#" class="fl"><img src="img/g1.jpg"/></a>
-                    <p class="fl"><a href="#">家用创意菜盘子圆盘 釉下彩复古</a><a href="#">¥99.00×1</a></p>
-                    <p class="fr"><a href="#">确认收货</a><a href="orderxq.html">订单详情</a></p></div>
+
             </div>
-            <div class="dkuang deng"><p class="one">待支付</p>
-                <div class="word clearfix">
-                    <ul class="fl clearfix">
-                        <li>2016年12月1日 18:53</li>
-                        <li>杨小黄</li>
-                        <li>订单号:5160513358520018</li>
-                        <li>在线支付</li>
-                    </ul>
-                    <p class="fr">订单金额：<span>99.00</span>元</p></div>
-                <div class="shohou clearfix"><a href="#" class="fl"><img src="img/g1.jpg"/></a>
-                    <p class="fl"><a href="#">家用创意菜盘子圆盘 釉下彩复古</a><a href="#">¥99.00×1</a></p>
-                    <p class="fr"><a href="#">立即支付</a><a href="orderxq.html">订单详情</a></p></div>
-            </div>
-            <div class="dkuang"><p class="one">已关闭</p>
-                <div class="word clearfix">
-                    <ul class="fl clearfix">
-                        <li>2016年12月1日 18:53</li>
-                        <li>杨小黄</li>
-                        <li>订单号:5160513358520018</li>
-                        <li>在线支付</li>
-                    </ul>
-                    <p class="fr">订单金额：<span>99.00</span>元</p></div>
-                <div class="shohou clearfix"><a href="#" class="fl"><img src="img/g1.jpg"/></a>
-                    <p class="fl"><a href="#">家用创意菜盘子圆盘 釉下彩复古</a><a href="#">¥99.00×1</a></p>
-                    <p class="fr"><a href="#">交易失败</a><a href="orderxq.html">订单详情</a></p></div>
-            </div>
+
             <div class="fenye clearfix"><a href="#"><img src="img/zuo.jpg"/></a><a href="#">1</a><a href="#"><img
                     src="img/you.jpg"/></a></div>
         </div>
     </div>
 </div><!--返回顶部-->
-<div class="gotop"><a href="cart.html">
+<div class="gotop"><a href="showcart">
     <dl>
         <dt><img src="img/gt1.png"/></dt>
         <dd>去购<br/>物车</dd>
@@ -110,7 +74,7 @@
         <dt><img src="img/gt2.png"/></dt>
         <dd>联系<br/>客服</dd>
     </dl>
-</a><a href="mygxin.html">
+</a><a href="mygxin.jsp">
     <dl>
         <dt><img src="img/gt3.png"/></dt>
         <dd>个人<br/>中心</dd>
@@ -135,8 +99,10 @@
             </div>
         </div>
     </div>
-    <p class="dibu">最家家居&copy;2013-2017公司版权所有 京ICP备080100-44备0000111000号<br/>
-        违法和不良信息举报电话：188-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</p></div>
+    <p class="dibu">MonkeyShop&copy;1000-2019公司版权所有 京ICP备010101-01备0101010101号<br/>
+        违法和不良信息举报电话：123-456-789，本网站所列图片，除特殊说明，所有图片均为网上搬运,blabala
+    </p>
+</div>
 <script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/public.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/user.js" type="text/javascript" charset="utf-8"></script>

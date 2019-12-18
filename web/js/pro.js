@@ -63,7 +63,7 @@ $(function () {
     $(".btns a").click(function () {
         if ($(".categ p").hasClass("on")) {
             if ($(this).children().hasClass("buy")) {
-                $(this).attr("href", "order.html")
+                $(this).attr("href", "order.jsp")
             }
             $(".proIntro").css("border", "none");
             $(".num .please").hide()
@@ -104,7 +104,7 @@ $(function () {
         a--;
         $(".ok span").text(a);
         if (a == 0) {
-            window.location.href = ("myorderq.html")
+            window.location.href = ("myorderq.jsp")
         }
     }
 

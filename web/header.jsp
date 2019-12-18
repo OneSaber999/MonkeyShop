@@ -37,7 +37,7 @@
                         <a href="showcart"><img src="img/gwc.png"/></a>
                     </c:if>
 
-                    <p><a href="#"><img src="img/smewm.png"/></a></p></div>
+                    <p><a href="#"><img src="img/ewm.jpg"/></a></p></div>
             </div>
         </div>
         <ul class="clearfix" id="bott">

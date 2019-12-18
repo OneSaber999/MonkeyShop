@@ -1,7 +1,9 @@
 package com.monkey.servlet.home;
 
 import com.monkey.entity.MONKEY_CATEGORY;
+import com.monkey.entity.MONKEY_PRODUCT;
 import com.monkey.service.MONKEY_CATEGORYDao;
+import com.monkey.service.MONKEY_PRODUCTDao;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -27,6 +29,11 @@ public class IndexSelect extends HttpServlet {
         ArrayList<MONKEY_CATEGORY> clist = MONKEY_CATEGORYDao.selectCat("child");
         request.setAttribute("clist",clist);
 
+
+
+        ArrayList<MONKEY_PRODUCT> list = MONKEY_PRODUCTDao.selectByIds();
+
+        request.setAttribute("list",list);
         request.getRequestDispatcher("index.jsp").forward(request,response);
 
     }

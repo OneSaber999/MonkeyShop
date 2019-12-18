@@ -30,8 +30,8 @@
 </head>
 <body><!-------------------reg-------------------------->
 <div class="reg">
-    <form action="register" method="post" onsubmit="return checkForm(this)"><h1><a href="index.html"><img src="img/temp/logo.png"></a></h1>
-        <p><h1 style="background-color: pink;font-size: 30px;color: white;text-align: center;margin: 0px;">用户注册</h1></p>
+    <form action="register" method="post" onsubmit="return checkForm(this)">
+        <p><h1 style="background-color: red;font-size: 25px;color: white;text-align: center;margin: 0px;">建立MonkeyShop Account</h1></p>
         <p><input type="text" name="userName" value="" onfocus="FocusItem(this)" onblur="CheckItem(this)" placeholder="请输入用户名"><span></span></p>
         <p><input type="text" name="name" value="" onfocus="FocusItem(this)" onblur="CheckItem(this)" placeholder="请输入姓名"><span></span></p>
         <p><input type="text" name="password" value="" onfocus="FocusItem(this)" onblur="CheckItem(this)" placeholder="请输入密码"><span></span></p>
@@ -52,7 +52,7 @@
             <使用条款和隐私策略 />
             </a>
         </p>
-        <p class="txt"><a href="#"><span></span>已有账号登录</a></p>
+        <p class="txt"><a href="login.jsp"><span></span>已有账号登录</a></p>
         <!--<a href="#" class="off"><img src="img/temp/off.png"></a>--></form>
 </div>
 </body>

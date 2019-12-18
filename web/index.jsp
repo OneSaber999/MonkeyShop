@@ -12,9 +12,10 @@
 <html>
 <head lang="en">
     <meta charset="utf-8"/>
-    <title>最家</title>
+    <title>ns</title>
     <link rel="stylesheet" type="text/css" href="css/public.css"/>
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="css/proList.css"/>
 </head>
 <body><!------------------------------head------------------------------>
 
@@ -26,149 +27,43 @@
     <div id="home_slider" class="flexslider">
         <ul class="slides">
             <li>
-                <div class="slide"><img src="img/banner2.jpg"/></div>
+                <div class="slide"><img src="img/banner1.jpg"/></div>
             </li>
             <li>
-                <div class="slide"><img src="img/banner1.jpg"/></div>
+                <div class="slide"><img src="img/banner2.png"/></div>
+            </li>
+            <li>
+                <div class="slide"><img src="img/banner3.png"/></div>
+            </li>
+            <li>
+                <div class="slide"><img src="img/banner4.png"/></div>
             </li>
         </ul>
     </div>
 </div><!------------------------------thImg------------------------------>
 <div class="thImg">
-    <div class="clearfix"><a href="vase_proList.html"><img src="img/i1.jpg"/></a><a href="proList.html"><img
-            src="img/i2.jpg"/></a><a href="#2"><img src="img/i3.jpg"/></a></div>
-</div><!------------------------------news------------------------------>
-<div class="news">
-    <div class="wrapper"><h2><img src="img/ih1.jpg"/></h2>
-        <div class="top clearfix"><a href="proDetail.html"><img src="img/n1.jpg"/>
-            <p></p></a><a href="proDetail.html"><img src="img/n2.jpg"/>
-            <p></p></a><a href="proDetail.html"><img src="img/n3.jpg"/>
-            <p></p></a></div>
-        <div class="bott clearfix"><a href="proDetail.html"><img src="img/n4.jpg"/>
-            <p></p></a><a href="proDetail.html"><img src="img/n5.jpg"/>
-            <p></p></a><a href="proDetail.html"><img src="img/n6.jpg"/>
-            <p></p></a></div>
-        <h2><img src="img/ih2.jpg"/></h2>
-        <div class="flower clearfix tran"><a href="proDetail.html" class="clearfix">
-            <dl>
-                <dt><span class="abl"></span><img src="img/flo1.jpg"/><span class="abr"></span></dt>
-                <dd>【花艺】七头美丽玫瑰仿真花束</dd>
-                <dd><span>¥ 79.00</span></dd>
-            </dl>
-        </a><a href="proDetail.html">
-            <dl>
-                <dt><span class="abl"></span><img src="img/flo2.jpg"/><span class="abr"></span></dt>
-                <dd>【花艺】七头美丽玫瑰仿真花束</dd>
-                <dd><span>¥ 79.00</span></dd>
-            </dl>
-        </a><a href="proDetail.html">
-            <dl>
-                <dt><span class="abl"></span><img src="img/flo3.jpg"/><span class="abr"></span></dt>
-                <dd>【花艺】七头美丽玫瑰仿真花束</dd>
-                <dd><span>¥ 79.00</span></dd>
-            </dl>
-        </a></div>
-        <div class="flower clearfix tran"><a href="proDetail.html">
-            <dl>
-                <dt><span class="abl"></span><img src="img/flo4.jpg"/><span class="abr"></span></dt>
-                <dd>【花艺】七头美丽玫瑰仿真花束</dd>
-                <dd><span>¥ 79.00</span></dd>
-            </dl>
-        </a><a href="proDetail.html">
-            <dl>
-                <dt><span class="abl"></span><img src="img/flo5.jpg"/><span class="abr"></span></dt>
-                <dd>【花艺】七头美丽玫瑰仿真花束</dd>
-                <dd><span>¥ 79.00</span></dd>
-            </dl>
-        </a><a href="proDetail.html">
-            <dl>
-                <dt><span class="abl"></span><img src="img/flo6.jpg"/><span class="abr"></span></dt>
-                <dd>【花艺】七头美丽玫瑰仿真花束</dd>
-                <dd><span>¥ 79.00</span></dd>
-            </dl>
-        </a></div>
+    <div class="clearfix">
+        <a href="selectproductlist?cid=10"><img src="img/temp/slsl.jpg"/></a>
+        <a href="selectproductlist?cid=6"><img src="img/temp/bkmj.jpg"/></a>
+        <a href="selectproductlist?cid=7"><img src="img/temp/zmd.jpg"/></a>
     </div>
-</div><!------------------------------ad------------------------------><a href="#" class="ad"><img
-        src="img/ib1.jpg"/></a><!------------------------------people------------------------------>
-<div class="people">
-    <div class="wrapper"><h2><img src="img/ih3.jpg"/></h2>
-        <div class="pList clearfix tran"><a href="proDetail.html">
+</div>
+
+<ul class="proList wrapper clearfix">
+
+    <c:forEach var="p" items="${list}">
+        <li><a href="selectproductview?id=${p.PRODUCT_ID}">
             <dl>
-                <dt><span class="abl"></span><img src="img/s7.jpg"/><span class="abr"></span></dt>
-                <dd>【最家】不锈钢壁饰墙饰软装</dd>
-                <dd><span>￥688.00</span></dd>
+                <dt><img src="images/product/${p.PRODUCT_FILENAME}"></dt>
+                <dd>【NS】${p.PRODUCT_NAME}</dd>
+                <dd>￥${p.PRODUCT_PRICE}.00</dd>
             </dl>
-        </a><a href="proDetail.html">
-            <dl>
-                <dt><span class="abl"></span><img src="img/s10.jpg"/><span class="abr"></span></dt>
-                <dd>【最家】小城动物木板画壁挂北欧</dd>
-                <dd><span>￥188.00</span></dd>
-            </dl>
-        </a><a href="proDetail.html">
-            <dl>
-                <dt><span class="abl"></span><img src="img/s4.jpg"/><span class="abr"></span></dt>
-                <dd>【最家】玄关假山水壁饰背景墙饰挂件创意</dd>
-                <dd><span>￥599.00</span></dd>
-            </dl>
-        </a><a href="proDetail.html">
-            <dl>
-                <dt><span class="abl"></span><img src="img/s9.jpg"/><span class="abr"></span></dt>
-                <dd>【最家】金属树枝壁饰铜鸟装饰品</dd>
-                <dd><span>￥928.00</span></dd>
-            </dl>
-        </a></div>
-        <div class="pList clearfix tran"><a href="proDetail.html">
-            <dl>
-                <dt><span class="abl"></span><img src="img/s6.jpg"/><span class="abr"></span></dt>
-                <dd>【最家】金属壁饰创意背景墙面挂件创意</dd>
-                <dd><span>￥228.00</span></dd>
-            </dl>
-        </a><a href="proDetail.html">
-            <dl>
-                <dt><span class="abl"></span><img src="img/s8.jpg"/><span class="abr"></span></dt>
-                <dd>【最家】小城动物木板画壁挂北欧</dd>
-                <dd><span>￥199.00</span></dd>
-            </dl>
-        </a><a href="proDetail.html">
-            <dl>
-                <dt><span class="abl"></span><img src="img/s12.jpg"/><span class="abr"></span></dt>
-                <dd>【最家】欧式复古挂钟创意餐厅钟表家居挂件</dd>
-                <dd><span>￥666.00</span></dd>
-            </dl>
-        </a><a href="proDetail.html">
-            <dl>
-                <dt><span class="abl"></span><img src="img/s1.jpg"/><span class="abr"></span></dt>
-                <dd>【最家】客厅地中海欧式现代相片墙创意</dd>
-                <dd><span>￥59.80</span></dd>
-            </dl>
-        </a></div>
-        <div class="pList clearfix tran"><a href="proDetail.html">
-            <dl>
-                <dt><span class="abl"></span><img src="img/s5.jpg"/><span class="abr"></span></dt>
-                <dd>【最家】铁艺荷叶壁挂软装背景墙上装饰品</dd>
-                <dd><span>￥800.00</span></dd>
-            </dl>
-        </a><a href="proDetail.html">
-            <dl>
-                <dt><span class="abl"></span><img src="img/s3.jpg"/><span class="abr"></span></dt>
-                <dd>【最家】欧式照片墙 创意组合结婚礼物</dd>
-                <dd><span>￥189.00</span></dd>
-            </dl>
-        </a><a href="proDetail.html">
-            <dl>
-                <dt><span class="abl"></span><img src="img/s2.jpg"/><span class="abr"></span></dt>
-                <dd>【最家】欧式钟表相框墙挂墙创意组合</dd>
-                <dd><span>￥148.00</span></dd>
-            </dl>
-        </a><a href="proDetail.html">
-            <dl>
-                <dt><span class="abl"></span><img src="img/s11.jpg"/><span class="abr"></span></dt>
-                <dd>【最家】小城动物木板画壁挂北欧</dd>
-                <dd><span>￥188.00</span></dd>
-            </dl>
-        </a></div>
-    </div>
-</div><!--返回顶部-->
+        </a></li>
+    </c:forEach>
+
+</ul>
+
+<!--返回顶部-->
 <div class="gotop"><a href="showcart">
     <dl>
         <dt><img src="img/gt1.png"/></dt>
@@ -204,8 +99,10 @@
             </div>
         </div>
     </div>
-    <p class="dibu">最家家居&copy;2013-2017公司版权所有 京ICP备080100-44备0000111000号<br/>
-        违法和不良信息举报电话：400-800-8200，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</p></div>
+    <p class="dibu">MonkeyShop&copy;1000-2019公司版权所有 京ICP备010101-01备0101010101号<br/>
+        违法和不良信息举报电话：123-456-789，本网站所列图片，除特殊说明，所有图片均为网上搬运,blabala
+    </p>
+</div>
 <script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/public.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/nav.js" type="text/javascript" charset="utf-8"></script>

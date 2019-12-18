@@ -20,68 +20,58 @@
 <body><!--------------------------------------cart--------------------->
 <div class="head ding">
     <div class="wrapper clearfix">
-        <div class="clearfix" id="top"><h1 class="fl"><a href="index.html"><img src="img/logo.png"/></a></h1>
-            <div class="fr clearfix" id="top1"><p class="fl"><a href="login.html" id="login">登录</a><a href="reg.html"
-                                                                                                      id="reg">注册</a>
+        <div class="clearfix" id="top"><h1 class="fl"><a href="indexselect"><img src="img/233.png"/></a></h1>
+            <div class="fr clearfix" id="top1"><p class="fl">
+                <c:if test="${isLogin !=1 }">
+                    <a href="login.jsp" id="login">登录</a><a href="reg.jsp" id="reg">注册</a>
+
+                </c:if>
+
+                <c:if test="${isLogin ==1 }">
+                    <b>你好：</b><a href="login.jsp" id="login">${name.USER_NAME }</a>
+
+                </c:if>
+
+                <c:if test="${isAdminLogin ==1 }">
+                    <a href="manage/admin_index.jsp" id="login1">进入后台</a>
+
+                </c:if>
             </p>
-                <form action="#" method="get" class="fl"><input type="text" placeholder="搜索"/><input type="button"/>
-                </form>
-                <div class="btn fl clearfix"><a href="mygxin.html"><img src="img/grzx.png"/></a><a href="#" class="er1"><img
-                        src="img/ewm.png"/></a><a href="cart.html"><img src="img/gwc.png"/></a>
+                <form action="#" method="get" class="fl"><input type="text" placeholder="热门搜索：宝可梦 剑"/><input
+                        type="button"/></form>
+                <div class="btn fl clearfix"><a href="mygxin.jsp"><img src="img/grzx.png"/></a><a href="#" class="er1"><img
+                        src="img/ewm.png"/></a>
+                    <c:if test="${isLogin ==1 }">
+                        <a href="showcart"><img src="img/gwc.png"/></a>
+                    </c:if>
+
                     <p><a href="#"><img src="img/smewm.png"/></a></p></div>
             </div>
         </div>
         <ul class="clearfix" id="bott">
-            <li><a href="index.html">首页</a></li>
-            <li><a href="#">所有商品</a>
-                <div class="sList">
-                    <div class="wrapper  clearfix"><a href="paint.html">
-                        <dl>
-                            <dt><img src="img/nav1.jpg"/></dt>
-                            <dd>浓情欧式</dd>
-                        </dl>
-                    </a><a href="paint.html">
-                        <dl>
-                            <dt><img src="img/nav2.jpg"/></dt>
-                            <dd>浪漫美式</dd>
-                        </dl>
-                    </a><a href="paint.html">
-                        <dl>
-                            <dt><img src="img/nav3.jpg"/></dt>
-                            <dd>雅致中式</dd>
-                        </dl>
-                    </a><a href="paint.html">
-                        <dl>
-                            <dt><img src="img/nav6.jpg"/></dt>
-                            <dd>简约现代</dd>
-                        </dl>
-                    </a><a href="paint.html">
-                        <dl>
-                            <dt><img src="img/nav7.jpg"/></dt>
-                            <dd>创意装饰</dd>
-                        </dl>
-                    </a></div>
-                </div>
-            </li>
-            <li><a href="flowerDer.html">装饰摆件</a>
-                <div class="sList2">
-                    <div class="clearfix"><a href="proList.html">干花花艺</a><a href="vase_proList.html">花瓶花器</a></div>
-                </div>
-            </li>
-            <li><a href="decoration.html">布艺软饰</a>
-                <div class="sList2">
-                    <div class="clearfix"><a href="zbproList.html">桌布罩件</a><a href="bzproList.html">抱枕靠垫</a></div>
-                </div>
-            </li>
-            <li><a href="paint.html">墙式壁挂</a></li>
-            <li><a href="perfume.html">蜡艺香薰</a></li>
-            <li><a href="idea.html">创意家居</a></li>
+            <li><a href="indexselect">首页</a></li>
+
+
+            <c:forEach var="f" items="${flist }">
+
+                <li><a href="selectproductlist?fid=${f.CATE_ID }">${f.CATE_NAME }</a>
+                    <div class="sList2">
+                        <div class="clearfix">
+                            <c:forEach var="c" items="${clist }">
+                                <c:if test="${f.CATE_ID == c.CATE_PARENT_ID }">
+                                    <a href="selectproductlist?cid=${c.CATE_ID }">${c.CATE_NAME }</a>
+                                </c:if>
+                            </c:forEach>
+                        </div>
+                    </div>
+                </li>
+            </c:forEach>
         </ul>
     </div>
 </div>
 <div class="cart mt"><!-----------------logo------------------->
-    <!--<div class="logo"><h1 class="wrapper clearfix"><a href="index.html"><img class="fl" src="img/temp/logo.png"></a><img class="top" src="img/temp/cartTop01.png"></h1></div>-->
-    <!-----------------site------------------->
+
+    <!------             -----------site------------------->
     <div class="site"><p class=" wrapper clearfix"><span class="fl">购物车</span><img class="top"
                                                                                    src="img/temp/cartTop01.png"><a
             href="indexselect" class="fr">继续购物&gt;</a></p></div><!-----------------table------------------->
@@ -103,7 +93,7 @@
                     <span></span></label>
                     <a class="fl" href="selectproductview?id=${rs.CART_P_ID }">
                         <dl class="clearfix">
-                            <dt class="fl"><img width="120" height="120" src="images/product/${rs.CART_P_FILENAME }"></dt>
+                            <dt class="fl"><img width="90" height="120" src="images/product/${rs.CART_P_FILENAME }"></dt>
                             <dd class="fl"><p>${rs.CART_P_NAME }</p>
                                 <p>图书分类</p>
                                 <p>好书+内容全</p></dd>
@@ -186,8 +176,10 @@
             </div>
         </div>
     </div>
-    <p class="dibu">最家家居&copy;2013-2017公司版权所有 京ICP备080100-44备0000111000号<br/>
-        违法和不良信息举报电话：188-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</p></div><!----------------mask------------------->
+    <p class="dibu">MonkeyShop&copy;1000-2019公司版权所有 京ICP备010101-01备0101010101号<br/>
+        违法和不良信息举报电话：123-456-789，本网站所列图片，除特殊说明，所有图片均为网上搬运,blabala
+    </p>
+</div><!----------------mask------------------->
 <div class="mask"></div><!-------------------mask内容------------------->
 <div class="proDets"><img class="off" src="img/temp/off.jpg"/>
     <div class="proCon clearfix">

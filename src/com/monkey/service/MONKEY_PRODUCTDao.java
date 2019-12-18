@@ -179,6 +179,49 @@ public class MONKEY_PRODUCTDao {
         return p;
     }
 
+    public static ArrayList<MONKEY_PRODUCT> selectByIds() {
+        ArrayList<MONKEY_PRODUCT> list = new ArrayList<>();
+        //声明结果集
+        ResultSet rs = null;
+        //获取连接对象
+        Connection conn = BaseDao.getconn();
+
+        PreparedStatement ps = null;
+
+
+        try {
+            String sql = "select * from MONKEY_PRODUCT";
+            ps = conn.prepareStatement(sql);
+
+            rs = ps.executeQuery();
+
+            while (rs.next()) {
+               MONKEY_PRODUCT p = new MONKEY_PRODUCT(
+                        rs.getInt("PRODUCT_ID"),
+                        rs.getString("PRODUCT_NAME"),
+                        rs.getString("PRODUCT_DESCRIPTION"),
+                        rs.getInt("PRODUCT_PRICE"),
+                        rs.getInt("PRODUCT_STOCK"),
+                        rs.getInt("PRODUCT_FID"),
+                        rs.getInt("PRODUCT_CID"),
+                        rs.getString("PRODUCT_FILENAME")
+                );
+
+                list.add(p);
+            }
+
+
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } finally {
+            BaseDao.closeall(rs, ps, conn);
+        }
+
+
+        return list;
+    }
+
 
     /**
      * 根据fid查询

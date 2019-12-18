@@ -88,7 +88,7 @@
                 <p class="clearfix"><span class="fl">[${name.USER_NAME }]</span><span>[<a href="logout">退出登录</a>]</span></p></h3>
             <div><h4>我的交易</h4>
                 <ul>
-                    <li><a href="cart.html">我的购物车</a></li>
+                    <li><a href="showcart">我的购物车</a></li>
                     <li><a href="myorderq.html">我的订单</a></li>
                     <li><a href="myprod.html">评价晒单</a></li>
                 </ul>
@@ -123,7 +123,7 @@
         </div>
     </div>
 </div><!--返回顶部-->
-<div class="gotop"><a href="cart.html">
+<div class="gotop"><a href="showcart">
     <dl>
         <dt><img src="img/gt1.png"/></dt>
         <dd>去购<br/>物车</dd>

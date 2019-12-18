@@ -24,7 +24,7 @@
             <h1 class="topbar-logo none"><a href="index.html" class="navbar-brand">后台管理</a></h1>
             <ul class="navbar-list clearfix">
                 <li><a class="on" href="/manage/admin_index.jsp">首页</a></li>
-                <li><a href="/index.jsp" target="_blank">网站首页</a></li>
+                <li><a href="/indexselect" target="_blank">网站首页</a></li>
             </ul>
         </div>
         <div class="top-info-wrap">
@@ -57,10 +57,10 @@
                 <li>
                     <a href="#"><i class="icon-font">&#xe018;</i>系统管理</a>
                     <ul class="sub-menu">
-                        <li><a href="system.html"><i class="icon-font">&#xe017;</i>系统设置</a></li>
-                        <li><a href="system.html"><i class="icon-font">&#xe037;</i>清理缓存</a></li>
-                        <li><a href="system.html"><i class="icon-font">&#xe046;</i>数据备份</a></li>
-                        <li><a href="system.html"><i class="icon-font">&#xe045;</i>数据还原</a></li>
+                        <li><a href="system.jsp"><i class="icon-font">&#xe017;</i>系统设置</a></li>
+                        <li><a href="system.jsp"><i class="icon-font">&#xe037;</i>清理缓存</a></li>
+                        <li><a href="system.jsp"><i class="icon-font">&#xe046;</i>数据备份</a></li>
+                        <li><a href="system.jsp"><i class="icon-font">&#xe045;</i>数据还原</a></li>
                     </ul>
                 </li>
             </ul>

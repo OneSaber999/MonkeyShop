@@ -32,7 +32,7 @@ public class LoginServlet extends HttpServlet {
             session.setAttribute("name",user);
             session.setAttribute("isLogin","1");
 
-            response.sendRedirect("index.jsp");
+            response.sendRedirect("indexselect");
         } else {
             PrintWriter out = response.getWriter();
             out.write("<Script>");

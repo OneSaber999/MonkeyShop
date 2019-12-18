@@ -79,9 +79,10 @@
                     </c:forEach>
 
                 </table>
-                    <div class="list-page">  共${tsum}条 ${cpage}/${tpage} 页
+                    <div class="list-page">
                         <a href="/manage/admin_douserselect?cp=1${SearchParams}">首页</a>
                         <a href="/manage/admin_douserselect?cp=${cpage-1<1?1:cpage-1}${SearchParams}">上一页</a>
+                        共${tsum}条 ${cpage}/${tpage} 页
                         <a href="/manage/admin_douserselect?cp=${cpage+1>tpage?tpage:cpage+1}${SearchParams}">下一页</a>
                         <a href="/manage/admin_douserselect?cp=${tpage}${SearchParams}">尾页</a>
                     </div>

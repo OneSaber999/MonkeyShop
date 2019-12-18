@@ -3,7 +3,7 @@ package com.monkey.entity;
 public class MONKEY_CART {
     public int CART_ID;
     public String CART_P_FILENAME;
-    public String CART_NAME;
+    public String CART_P_NAME;
     public int CART_P_PRICE;
     public int CART_QUANTITY;
     public int CART_P_STOCK;
@@ -11,10 +11,10 @@ public class MONKEY_CART {
     public String CART_U_ID;
     public int CART_VALID;
 
-    public MONKEY_CART(int CART_ID, String CART_P_FILENAME, String CART_NAME, int CART_P_PRICE, int CART_QUANTITY, int CART_P_STOCK, int CART_P_ID, String CART_U_ID, int CART_VALID) {
+    public MONKEY_CART(int CART_ID, String CART_P_FILENAME, String CART_P_NAME, int CART_P_PRICE, int CART_QUANTITY, int CART_P_STOCK, int CART_P_ID, String CART_U_ID, int CART_VALID) {
         this.CART_ID = CART_ID;
         this.CART_P_FILENAME = CART_P_FILENAME;
-        this.CART_NAME = CART_NAME;
+        this.CART_P_NAME = CART_P_NAME;
         this.CART_P_PRICE = CART_P_PRICE;
         this.CART_QUANTITY = CART_QUANTITY;
         this.CART_P_STOCK = CART_P_STOCK;
@@ -39,12 +39,12 @@ public class MONKEY_CART {
         this.CART_P_FILENAME = CART_P_FILENAME;
     }
 
-    public String getCART_NAME() {
-        return CART_NAME;
+    public String getCART_P_NAME() {
+        return CART_P_NAME;
     }
 
-    public void setCART_NAME(String CART_NAME) {
-        this.CART_NAME = CART_NAME;
+    public void setCART_P_NAME(String CART_P_NAME) {
+        this.CART_P_NAME = CART_P_NAME;
     }
 
     public int getCART_P_PRICE() {

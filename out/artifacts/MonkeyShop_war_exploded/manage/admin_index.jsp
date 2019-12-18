@@ -11,7 +11,7 @@
     <!--/sidebar-->
     <div class="main-wrap">
         <div class="crumb-wrap">
-            <div class="crumb-list"><i class="icon-font">&#xe06b;</i><span>欢迎使用『学习猿地』博客程序，建博的首选工具。</span></div>
+            <div class="crumb-list"><i class="icon-font">&#xe06b;</i><span>欢迎使用『MonkeyShop』后台管理系统。</span></div>
         </div>
         <div class="result-wrap">
             <div class="result-title">
@@ -19,10 +19,9 @@
             </div>
             <div class="result-content">
                 <div class="short-wrap">
-                    <a href="insert.html"><i class="icon-font">&#xe001;</i>新增作品</a>
-                    <a href="insert.html"><i class="icon-font">&#xe005;</i>新增博文</a>
-                    <a href="insert.html"><i class="icon-font">&#xe048;</i>新增作品分类</a>
-                    <a href="insert.html"><i class="icon-font">&#xe041;</i>新增博客分类</a>
+                    <a href="admin_useradd.jsp"><i class="icon-font">&#xe041;</i>新增用户</a>
+                    <a href="admin_cateadd.jsp"><i class="icon-font">&#xe048;</i>新增分类</a>
+                    <a href="admin_productadd.jsp"><i class="icon-font">&#xe001;</i>新增商品</a>
                     <a href="#"><i class="icon-font">&#xe01e;</i>作品评论</a>
                 </div>
             </div>
@@ -34,28 +33,25 @@
             <div class="result-content">
                 <ul class="sys-info-list">
                     <li>
-                        <label class="res-lab">操作系统</label><span class="res-info">WINNT</span>
+                        <label class="res-lab">操作系统</label><span class="res-info">WIN10</span>
                     </li>
                     <li>
-                        <label class="res-lab">运行环境</label><span class="res-info">Apache/2.2.21 (Win64) PHP/7.3.10</span>
+                        <label class="res-lab">运行环境</label><span class="res-info">TomCat 7.0.96</span>
                     </li>
                     <li>
-                        <label class="res-lab">PHP运行方式</label><span class="res-info">apache2handler</span>
+                        <label class="res-lab">Modules</label><span class="res-info">JDK1.8</span>
                     </li>
                     <li>
-                        <label class="res-lab">静静设计-版本</label><span class="res-info">v-0.1</span>
+                        <label class="res-lab">上传附件限制</label><span class="res-info">未知</span>
                     </li>
                     <li>
-                        <label class="res-lab">上传附件限制</label><span class="res-info">2M</span>
+                        <label class="res-lab">北京时间</label><span class="res-info" id="now"></span>
                     </li>
                     <li>
-                        <label class="res-lab">北京时间</label><span class="res-info">2019年3月18日 21:08:24</span>
+                        <label class="res-lab">服务器地址</label><span class="res-info">http://localhost:8080/</span>
                     </li>
                     <li>
-                        <label class="res-lab">服务器域名/IP</label><span class="res-info">localhost [ 127.0.0.1 ]</span>
-                    </li>
-                    <li>
-                        <label class="res-lab">Host</label><span class="res-info">127.0.0.1</span>
+                        <label class="res-lab">框架</label><span class="res-info">没用</span>
                     </li>
                 </ul>
             </div>
@@ -67,7 +63,7 @@
             <div class="result-content">
                 <ul class="sys-info-list">
                     <li>
-                        <label class="res-lab">更多模板：</label><span class="res-info"><a href="http://www.lmonkey.com/" target="_blank">学习猿地</a></span>
+                        <label class="res-lab">如果不会：</label><span class="res-info"><a href="http://www.baidu.com/" target="_blank">百度一下</a></span>
                     </li>
                 </ul>
             </div>
@@ -76,4 +72,26 @@
     <!--/main-->
 </div>
 </body>
+<script>
+    function showTime(){
+        var nowDate = new Date();
+        //获取年份
+        var y = nowDate.getFullYear();
+        //获取月份
+        var mon = nowDate.getMonth()+1;
+        //获取日期
+        var d = nowDate.getDate();
+        //获取小时
+        var h = nowDate.getHours();
+        //获取分钟
+        var min = nowDate.getMinutes();
+        //获取秒数
+        var s = nowDate.getSeconds();
+        var showT = document.getElementById("now");
+        showT.innerHTML = y+"年"+mon+"月"+d+"日"+h+"时"+min+"分"+s+"秒";
+        var w = window.location.hostname;
+    }
+
+    showTime();
+</script>
 </html>

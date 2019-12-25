@@ -19,10 +19,10 @@
             </div>
             <div class="result-content">
                 <div class="short-wrap">
-                    <a href="admin_useradd.jsp"><i class="icon-font">&#xe041;</i>新增用户</a>
-                    <a href="admin_cateadd.jsp"><i class="icon-font">&#xe048;</i>新增分类</a>
-                    <a href="admin_productadd.jsp"><i class="icon-font">&#xe001;</i>新增商品</a>
-                    <a href="#"><i class="icon-font">&#xe01e;</i>作品评论</a>
+                    <a href="admin_touseradd"><i class="icon-font">&#xe041;</i>新增用户</a>
+                    <a href="admin_tocateadd"><i class="icon-font">&#xe048;</i>新增分类</a>
+                    <a href="admin_toproductadd"><i class="icon-font">&#xe001;</i>新增商品</a>
+
                 </div>
             </div>
         </div>

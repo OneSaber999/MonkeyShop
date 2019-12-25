@@ -95,8 +95,8 @@
                         <dl class="clearfix">
                             <dt class="fl"><img width="90" height="120" src="images/product/${rs.CART_P_FILENAME }"></dt>
                             <dd class="fl"><p>${rs.CART_P_NAME }</p>
-                                <p>图书分类</p>
-                                <p>好书+内容全</p></dd>
+                                <p>商品分类</p>
+                                <p>好五+内容全</p></dd>
                         </dl>
                     </a></div>
                 <div class="price">￥${rs.CART_P_PRICE }.00</div>
